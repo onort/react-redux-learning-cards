@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
+
+import Header from './common/Header';
 
 const App = (props) => {
   return (
     <div>
-      <h3>This is App Component</h3>
-      {props.children}
+      <Header />
+      <div className="main-container">
+        {props.children}
+      </div>
     </div>
   );
+};
+
+App.propTypes = {
+  children: PropTypes.object
 };
 
 export default App;

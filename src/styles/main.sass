@@ -1,12 +1,20 @@
 $blue: #4078c0
+$green: rgb(72, 147, 91)
+$red: rgb(198, 53, 39)
+$orange: #e0b54e
 $mainText: #333
+$lightGray: rgb(232, 232, 232)
+$bg-color: #edecec
+$font: Helvetica, Arial, sans-serif
+$headerHeight: 60px
+$headerBg: #303030
 
 body
   margin: 0
-  background-color: #e2e2e2
-  font-family: Helvetica, Arial, sans-serif
+  font-family: $font
   color: $mainText
   letter-spacing: .3px
+  background-color: $bg-color
 
 a
   text-decoration: none
@@ -14,7 +22,101 @@ a
   &:hover
     color: $mainText
 
-#app
-  margin: 20px
+button
+  outline: none
+
+.header
+  background: $headerBg
+  position: fixed
+  top: 0
+  left: 0
+  height: $headerHeight
+  width: 100%
+  padding: 0 60px
+
+  a
+    color: white
+
+
+  .brand
+    margin: 0
+    padding: 0
+    line-height: $headerHeight
+
+.main-container
+  width: 80%
+  margin: $headerHeight auto 0
+  padding: 10px
+
+.card-container
+  margin: 30px auto
+  padding: 40px 20px
+  background-color: white
+  border-radius: 2px
+  height: 250px
+  width: 400px
+  box-shadow: rgba(0, 0, 0, 0.188235) 0px 10px 30px, rgba(0, 0, 0, 0.227451) 0px 6px 10px
+  text-align: center
+  position: relative
+
+.card-actions
+  width: 300px
   padding: 20px
+  border-top: 1px solid $lightGray
+  position: absolute
+  bottom: 0
+  left: 50%
+  transform: translate(-50%, 0) // needed for centering items in a abs positioned div
+  text-align: center
+
+=button
+  padding: 10px 15px
+  margin-right: 10px
+  text-transform: uppercase
+  text-align: center
+  font-size: 14px
+  letter-spacing: 0px
+  border-radius: 2px
+  font-weight: 500
+  border: 1px solid white
+  color: white
+  cursor: pointer
+
+=button-inverted
+  background-color: white
+  padding: 10px 15px
+  margin-right: 10px
+  text-transform: uppercase
+  text-align: center
+  font-size: 14px
+  letter-spacing: 0px
+  border-radius: 2px
+  font-weight: 500
+  cursor: pointer
+
+=button-bg($bg)
+  background-color: $bg
+  &:hover
+    background-color: lighten($bg, 10%)
+
+=button-color($color)
+  color: $color
+    
+
+.lc-button
+  @include button
+  &.wrong
+    @include button-bg($red)
+  &.correct
+    @include button-bg($green)
+  &.repeat
+    @include button-bg($orange)
+  
+.lc-button-inverted
+  @include button-inverted
+  &.reveal
+    @include button-color($mainText)
+    border: none
+    &:hover
+      transform: scale(1.1)
 

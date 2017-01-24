@@ -15,6 +15,7 @@ const config = {
     inline: true,
     port: 8080,
     contentBase: './src',
+    historyApiFallback: true,
   },
 
   module: {
@@ -29,7 +30,7 @@ const config = {
       },
       {
         test: /\.sass$/,
-        loaders: ["style-loader", "css-loader", "sass-loader"]
+        loaders: ['style', 'css', 'sass']
       }
     ],
   },
