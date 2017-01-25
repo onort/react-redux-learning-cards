@@ -16,7 +16,7 @@ class Card extends Component {
 
   handleNext() {
     this.setState({ answered: false});
-    this.props.handleNext();
+    this.props.markCard(this.props.cards[this.props.info.currentCard]);
   }
 
   wordMeanings(meaning, index) {
@@ -24,8 +24,8 @@ class Card extends Component {
   }
 
   render() {
-    const { handleNext, cards, currentCard } = this.props;
-    const cardToRender = cards ? cards[currentCard]: null;
+    const { cards, info, markCard } = this.props;
+    const cardToRender = cards ? cards[info.currentCard]: null;
     const unanswered = (
       <div>
         <div className="card-header">
@@ -72,8 +72,8 @@ class Card extends Component {
 
 Card.propTypes = {
   cards: PropTypes.array.isRequired,
-  currentCard: PropTypes.number,
-  handleNext: PropTypes.func.isRequired,
+  info: PropTypes.object.isRequired,
+  markCard: PropTypes.func.isRequired
 };
 
 export default Card;

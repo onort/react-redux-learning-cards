@@ -1,3 +1,4 @@
 export default {
-  cards:[]
+  cards:[],
+  info: { currentCard: 0 }
 };
