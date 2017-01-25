@@ -14,9 +14,9 @@ class Card extends Component {
     this.setState({ answered: true });
   }
 
-  handleNext() {
+  handleNext(mark) {
     this.setState({ answered: false});
-    this.props.markCard(this.props.cards[this.props.info.currentCard]);
+    this.props.markCard(this.props.cards[this.props.info.currentCard], mark);
   }
 
   wordMeanings(meaning, index) {
@@ -56,9 +56,9 @@ class Card extends Component {
         </div>
         <div className="card-actions">
           <h4>How did it go?</h4>
-          <button className="lc-button-inverted correct" onClick={this.handleNext}><i className="material-icons">done</i></button>
-          <button className="lc-button-inverted repeat" onClick={this.handleNext}><i className="material-icons">cached</i></button>
-          <button className="lc-button-inverted wrong" onClick={this.handleNext}><i className="material-icons">clear</i></button>
+          <button className="lc-button-inverted correct" onClick={() => this.handleNext(1)}><i className="material-icons">done</i></button>
+          <button className="lc-button-inverted repeat" onClick={() => this.handleNext(0)}><i className="material-icons">cached</i></button>
+          <button className="lc-button-inverted wrong" onClick={() => this.handleNext(-1)}><i className="material-icons">clear</i></button>
         </div>
       </div>
     ) : null;

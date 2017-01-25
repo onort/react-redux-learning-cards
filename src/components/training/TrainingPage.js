@@ -16,16 +16,16 @@ class TrainPage extends Component {
     this.handleMark = this.handleMark.bind(this);
   }
 
-  handleMark(card) {
-    this.props.handleMark(card);
+  handleMark(card, mark) {
+    this.props.handleMark(card, mark);
   }
 
   render() {
-    const { currentCard, activeCard } = this.state;
+    const { activeCard } = this.state;
     const { cards, info } = this.props;
     return (
       <div>
-        <h4>Total Cards: {cards.length} | Current: {currentCard + 1}</h4>
+        <h4>Total Cards: {cards.length} | Current: {info.currentCard + 1}</h4>
         <Card cards={cards} info={info} markCard={this.handleMark}  />
       </div>
     );
@@ -47,7 +47,7 @@ function mapStateToProps(state, ownProps) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    handleMark: card => dispatch(infoActions.markCard(card))
+    handleMark: (card, mark) => dispatch(infoActions.markCard(card, mark))
   };
 }
 
