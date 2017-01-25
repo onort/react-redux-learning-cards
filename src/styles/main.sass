@@ -50,18 +50,42 @@ button
 
 .card-container
   margin: 30px auto
-  padding: 40px 20px
+  padding: 10px 20px
   background-color: white
   border-radius: 2px
-  height: 250px
+  height: 350px
   width: 400px
   box-shadow: rgba(0, 0, 0, 0.188235) 0px 10px 30px, rgba(0, 0, 0, 0.227451) 0px 6px 10px
   text-align: center
   position: relative
+  box-sizing: border-box
+
+.card-header
+  text-align: left
+
+  h3
+    color: lighten($mainText, 50%)
+
+.card-type
+  color: lighten($mainText, 30%)
+  font-size: 0.8em
+  font-style: italic
+
+.question
+  padding-top: 20px
+
+.meanings
+  text-align: left
+  padding-left: 60px
+
+  li
+    line-height: 20px
+    margin: 10px
+    letter-spacing: .5px
 
 .card-actions
   width: 300px
-  padding: 20px
+  padding: 10px 20px 20px
   border-top: 1px solid $lightGray
   position: absolute
   bottom: 0
@@ -69,6 +93,9 @@ button
   transform: translate(-50%, 0) // needed for centering items in a abs positioned div
   text-align: center
 
+  h4
+    margin: 5px auto 10px
+  
 =button
   padding: 10px 15px
   margin-right: 10px
@@ -105,18 +132,25 @@ button
 
 .lc-button
   @include button
-  &.wrong
-    @include button-bg($red)
-  &.correct
-    @include button-bg($green)
-  &.repeat
-    @include button-bg($orange)
+  // &.wrong
+  //   @include button-bg($red)
+  // &.correct
+  //   @include button-bg($green)
+  // &.repeat
+  //   @include button-bg($orange)
   
 .lc-button-inverted
   @include button-inverted
+  border: none
+  &:hover
+      transform: scale(1.4)
+      transition: all .25s
+  &.correct
+    @include button-color($green)
+  &.wrong
+    @include button-color($red)
+  &.repeat
+    @include button-color($orange)
   &.reveal
     @include button-color($mainText)
-    border: none
-    &:hover
-      transform: scale(1.1)
 

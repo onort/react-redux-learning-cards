@@ -24,8 +24,7 @@ class TrainPage extends Component {
     const { cards } = this.props;
     return (
       <div>
-        <h3>Training Page</h3>
-        <h4>Total Cards:  | Current: {currentCard + 1}</h4>
+        <h4>Total Cards: {cards.length} | Current: {currentCard + 1}</h4>
         <Card currentCard={currentCard} handleNext={this.handleNext} cards={cards} />
       </div>
     );

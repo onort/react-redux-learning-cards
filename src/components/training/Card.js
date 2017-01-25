@@ -19,29 +19,46 @@ class Card extends Component {
     this.props.handleNext();
   }
 
+  wordMeanings(meaning, index) {
+    return <li key={index}>{meaning}</li>;
+  }
+
   render() {
     const { handleNext, cards, currentCard } = this.props;
     const cardToRender = cards ? cards[currentCard]: null;
     const unanswered = (
       <div>
-      { cardToRender ? <h3>{cardToRender.word}</h3> : <h3>No card to Render</h3>}
-      <div className="card-actions">
-        <button className="lc-button-inverted reveal" onClick={this.handleReveal}>
-          <i className="material-icons">chrome_reader_mode</i>
-        </button>
+        <div className="card-header">
+          <h3>Oxford 3000</h3>
+        </div>
+        <div className="card-body">
+          { cardToRender ? 
+            <h3 className="question"><small>What is the meaning of </small><br /> {cardToRender.word}?</h3> : 
+            <h3>No card to Render</h3>}
+        </div>
+        <div className="card-actions">
+          <button className="lc-button-inverted reveal" onClick={this.handleReveal}>
+            <i className="material-icons">chrome_reader_mode</i>
+          </button>
+        </div>
       </div>
-    </div>
     );
     const answered = cardToRender ? (
       <div>
+        <div className="card-header">
+          <h3>Oxford 3000</h3>
+        </div>
         <div className="card-body">
-          <h3>{cardToRender.word}</h3>
-          {cardToRender.meanings.map((meaning, index) => <h3 key={index}>{meaning}</h3>)}
+          <h3>{cardToRender.word} <span className="card-type">({cardToRender.type})</span></h3>
+          <ol className="meanings">
+            {cardToRender.meanings.map(this.wordMeanings)}
+          </ol>
         </div>
         <div className="card-actions">
-          <button className="lc-button correct" onClick={this.handleNext}><i className="material-icons">done</i></button>
-          <button className="lc-button repeat" onClick={this.handleNext}><i className="material-icons">cached</i></button>
-          <button className="lc-button wrong" onClick={this.handleNext}><i className="material-icons">clear</i></button>
+          <h4>How did it go?</h4>
+          <button className="lc-button-inverted correct" onClick={this.handleNext}><i className="material-icons">done</i></button>
+          <button className="lc-button-inverted repeat" onClick={this.handleNext}><i className="material-icons">cached</i></button>
+          <button className="lc-button-inverted wrong" onClick={this.handleNext}><i className="material-icons">clear</i></button>
         </div>
       </div>
     ) : null;
