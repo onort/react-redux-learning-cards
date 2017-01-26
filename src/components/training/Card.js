@@ -23,6 +23,8 @@ class Card extends Component {
     return <li key={index}>{meaning}</li>;
   }
 
+  // TODO: Header, Body, Actions components?
+  // TODO: Conditional rendering unanswered/answered/finished 
   render() {
     const { cards, info, markCard } = this.props;
     const cardToRender = cards ? cards[info.currentCard]: null;
@@ -38,7 +40,7 @@ class Card extends Component {
         </div>
         <div className="card-actions">
           <button className="lc-button-inverted reveal" onClick={this.handleReveal}>
-            <i className="material-icons">chrome_reader_mode</i>
+            <i className="material-icons">speaker_notes</i>
           </button>
         </div>
       </div>

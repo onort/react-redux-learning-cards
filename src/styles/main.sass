@@ -45,7 +45,7 @@ button
     line-height: $headerHeight
 
 .main-container
-  width: 80%
+  max-width: 750px
   margin: $headerHeight auto 0
   padding: 10px
 
@@ -73,7 +73,8 @@ button
   font-style: italic
 
 .question
-  padding-top: 20px
+  padding-top: 40px
+  line-height: 32px
 
 .meanings
   text-align: left
@@ -96,6 +97,9 @@ button
 
   h4
     margin: 5px auto 10px
+  
+  .material-icons
+    font-size: 32px
 
 // Stats
 .training-stats
@@ -126,8 +130,8 @@ button
     background-color: lighten($mainText, 65%)
     border-radius: 2px
 
-    >div 
-      background: lighten($mainText, 35%)
+    > div 
+      background: $blue
       height: 100%
       overflow: hidden
       transition: width 0.3s linear 0ms
@@ -181,7 +185,7 @@ button
   @include button-inverted
   border: none
   &:hover
-      transform: scale(1.4)
+      transform: scale(1.25)
       transition: all .25s
   &.correct
     @include button-color($green)
