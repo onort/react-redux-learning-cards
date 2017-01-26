@@ -5,6 +5,7 @@ import * as infoActions from '../../actions/infoActions';
 
 import mockData from '../../api/mockData';
 import Card from './Card';
+import TrainingStats from './TrainingStats';
 
 class TrainPage extends Component {
   constructor(props) {
@@ -25,7 +26,7 @@ class TrainPage extends Component {
     const { cards, info } = this.props;
     return (
       <div>
-        <h4>Total Cards: {cards.length} | Current: {info.currentCard + 1}</h4>
+        <TrainingStats info={info} />
         <Card cards={cards} info={info} markCard={this.handleMark}  />
       </div>
     );
