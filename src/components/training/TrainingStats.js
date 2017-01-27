@@ -9,7 +9,7 @@ const TrainingStats = (props) => {
       <span className="stat repeat">{repeat}</span>
       <span className="stat wrong">{wrong}</span>
       <div className="progress progress-bar">
-        <div style={{width: `${progressWidth}%`}}></div>
+        <div style={{width: `${progressWidth}%`}} />
       </div>
     </div>
   );
