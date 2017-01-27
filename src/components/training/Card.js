@@ -8,9 +8,7 @@ import TrainingEnd from './TrainingEnd';
 class Card extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      answered: false
-    };
+
     this.handleReveal = this.handleReveal.bind(this);
     this.handleMark = this.handleMark.bind(this);
   }

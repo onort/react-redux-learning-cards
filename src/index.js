@@ -3,13 +3,14 @@ import { render } from 'react-dom';
 import { Router, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import { getData } from './actions/dataActions';
+import { getAvailableTopics } from './actions/topicActions';
 import configureStore from './store/configureStore';
 
 import routes from './routes';
 import './styles/main.sass';
 
 const store = configureStore();
-store.dispatch(getData());
+store.dispatch(getAvailableTopics());
 
 render(
   <Provider store={store}>

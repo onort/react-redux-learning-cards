@@ -1,4 +1,4 @@
-const cards = [
+export const cards = [
   { "id": 1, "word": "abandon", "type": "verb", "meanings": ["terk etmek"], "score": null},
   { "id": 2, "word": "ability", "type": "noun", "meanings": ["beceri", "kabiliyet", "yeterlilik"], "score": null},
   { "id": 3, "word": "about", "type": "adverb", "meanings": ["aşağı yukarı", "hakkında"], "score": null},
@@ -22,4 +22,11 @@ const cards = [
   { "id": 21, "word": "unpleasant", "type": "adjective", "meanings": ["hoş olmayan"], "score": null}
 ];
 
-export default cards;
+export const otherCards = [
+  { "id": 1, "word": "abandon", "type": "verb", "meanings": ["terk etmek"], "score": null},
+  { "id": 2, "word": "ability", "type": "noun", "meanings": ["beceri", "kabiliyet", "yeterlilik"], "score": null},
+  { "id": 3, "word": "about", "type": "adverb", "meanings": ["aşağı yukarı", "hakkında"], "score": null},
+  { "id": 4, "word": "abroad", "type": "adverb", "meanings": ["yurt dışında"], "score": null},
+];
+
+export const availableTopics = [ 'cards', 'otherCards' ];

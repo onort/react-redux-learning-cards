@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import * as dataActions from '../../actions/dataActions';
 import * as infoActions from '../../actions/infoActions';
 
-import mockData from '../../api/mockData';
 import Card from './Card';
 import TrainingStats from './TrainingStats';
 
