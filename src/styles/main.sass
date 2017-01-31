@@ -205,3 +205,13 @@ button
   &.reveal
     @include button-color($mainText)
 
+// Card Contaıner Scroll Bar
+
+.card-container::-webkit-scrollbar,
+    width: 5px
+ 
+.card-container::-webkit-scrollbar-track,
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.2)
+
+.card-container::-webkit-scrollbar-thumb,
+  background-color: lighten($mainText, 20%)
