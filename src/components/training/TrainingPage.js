@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router';
 import * as dataActions from '../../actions/dataActions';
 import * as infoActions from '../../actions/infoActions';
 
@@ -15,6 +16,20 @@ class TrainPage extends Component {
     };
     this.handleMark = this.handleMark.bind(this);
     this.handleReveal = this.handleReveal.bind(this);
+    this.routerWillLeave = this.routerWillLeave.bind(this)
+  }
+
+  componentDidMount() {
+    // https://github.com/ReactTraining/react-router/blob/master/docs/guides/ConfirmingNavigation.md
+    this.props.router.setRouteLeaveHook(this.props.route, this.routerWillLeave)
+  }
+
+  routerWillLeave(nextLocation) {
+    // return false to prevent a transition w/o prompting the user,
+    // or return a string to allow the user to decide:
+    if (true)
+      console.log(nextLocation)
+      return 'This will reset your training progress'
   }
 
   handleMark(card, mark) {
@@ -58,4 +73,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(TrainPage);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(TrainPage));
