@@ -60,6 +60,7 @@ button
   text-align: center
   position: relative
   box-sizing: border-box
+  overflow-y: auto
 
 .card-header
   text-align: left
@@ -76,21 +77,27 @@ button
   padding-top: 40px
   line-height: 32px
 
+.word-definition
+  text-align: left
+  font-size: 1em
+  padding-left: 20px
+
 .meanings
   text-align: left
-  padding-left: 60px
+  padding-left: 30px
 
   li
+    font-size: .9em
     line-height: 20px
-    margin: 10px
     letter-spacing: .5px
 
+// TO DECIDE: fixed in card-container or fixed in window?
 .card-actions
   width: 300px
   padding: 10px 20px 20px
   border-top: 1px solid $lightGray
-  position: absolute
-  bottom: 0
+  position: fixed
+  bottom: 10px
   left: 50%
   transform: translate(-50%, 0) // needed for centering items in a abs positioned div
   text-align: center
