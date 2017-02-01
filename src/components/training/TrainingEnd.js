@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 
 const TrainingEnd = ({ info }) => {
-  const { correct, wrong, repeat } = info;
+  const { correct, wrong, repeat } = info.answers;
   return (
     <div>
       <h3>Done!</h3>

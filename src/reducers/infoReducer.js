@@ -7,13 +7,13 @@ export default function infoReducer(state = initialState.info, action) {
       const newInfoObj = state;
       newInfoObj.currentCard += 1;
       newInfoObj.answered = false;
-      if (action.mark === 1) newInfoObj.correct = newInfoObj.correct + 1;
-      else if (action.mark === 0) newInfoObj.repeat = newInfoObj.repeat + 1;
-      else if (action.mark === -1) newInfoObj.wrong = newInfoObj.wrong + 1;
+      if (action.mark === 1) newInfoObj.answers.correct = newInfoObj.answers.correct + 1;
+      else if (action.mark === 0) newInfoObj.answers.repeat = newInfoObj.answers.repeat + 1;
+      else if (action.mark === -1) newInfoObj.answers.wrong = newInfoObj.answers.wrong + 1;
       return Object.assign({}, newInfoObj);
     }
     case types.GET_DATA_SUCCESS:
-      return Object.assign({}, state, { length: action.data.length });
+      return Object.assign({}, state, { length: action.data.length, loading: false });
     case types.REVEAL_ANSWER:
       return Object.assign({}, state, { answered: true });
     default:
