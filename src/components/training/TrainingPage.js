@@ -3,7 +3,9 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
 import * as infoActions from '../../actions/infoActions';
 
-import Card from './Card';
+import AnswerCard from '../card/AnswerCard';
+import Loading from '../common/Loading';
+import QuestionCard from '../card/QuestionCard';
 import TrainingStats from './TrainingStats';
 
 class TrainPage extends Component {
@@ -33,10 +35,13 @@ class TrainPage extends Component {
 
   render() {
     const { cards, info, handleReveal } = this.props;
+    const cardToRender = info.answered === false ? 
+      <QuestionCard card={cards[info.currentCard]} handleReveal={handleReveal} /> : 
+      <AnswerCard card={cards[info.currentCard]} handleMark={this.handleMark} />;
     return (
       <div>
         <TrainingStats info={info} />
-        <Card cards={cards} info={info} markCard={this.handleMark} handleReveal={handleReveal} />
+        { !info.loading ? cardToRender : <Loading /> }
       </div>
     );
   }

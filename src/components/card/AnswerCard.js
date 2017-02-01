@@ -1,24 +1,19 @@
 import React, { PropTypes } from 'react';
 
-const AnswerBody = ({ card, handleMark }) => {
+const AnswerCard = ({ card, handleMark }) => {
   const renderDefinitions = (definition, i) => {
     return (
       <div key={i}>
-        <h3 className="word-definition">{card.word} <span className="card-type">({definition.pos})</span></h3>
-        {definition.meanings.length > 1 ? 
-          <ol className="meanings">
-            {definition.meanings.map((meaning, i) => <li key={i}>{meaning}</li>)}
-          </ol> :
-          <ul className="meanings">
-            <li>{definition.meanings[0]}</li>
-          </ul>
-          }    
+        <h3 className="word-definition">{card.word} <span className="card-type">({definition.pos})</span></h3> 
+        <ol className="meanings">
+          {definition.meanings.map((meaning, i) => <li key={i}>{meaning}</li>)}
+        </ol>    
       </div>
     );
   };
-  // TO DECIDE: Card Actions placement
+
   return (
-    <div>
+    <div className="card-container">
       <div className="card-body">
         {card.definitions.map(renderDefinitions)}
       </div>
@@ -32,9 +27,9 @@ const AnswerBody = ({ card, handleMark }) => {
   );
 };
 
-AnswerBody.propTypes = {
+AnswerCard.propTypes = {
   card: PropTypes.object.isRequired,
   handleMark: PropTypes.func.isRequired
 };
 
-export default AnswerBody;
+export default AnswerCard;
