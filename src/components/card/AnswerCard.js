@@ -19,9 +19,9 @@ const AnswerCard = ({ card, handleMark }) => {
       </div>
       <div className="card-actions">
         <h4>How did it go?</h4>
-        <button className="lc-button-inverted correct" onClick={() => handleMark(1)}><i className="material-icons">done</i></button>
-        <button className="lc-button-inverted repeat" onClick={() => handleMark(0)}><i className="material-icons">cached</i></button>
-        <button className="lc-button-inverted wrong" onClick={() => handleMark(-1)}><i className="material-icons">clear</i></button>
+        <button className="lc-button-inverted correct" onClick={() => handleMark(card, 1)}><i className="material-icons">done</i></button>
+        <button className="lc-button-inverted repeat" onClick={() => handleMark(card, 0)}><i className="material-icons">cached</i></button>
+        <button className="lc-button-inverted wrong" onClick={() => handleMark(card, -1)}><i className="material-icons">clear</i></button>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ export default function dataReducer(state = initialState.cards, action) {
       return action.data;
     case types.MARK_CARD:
       return state.map(card => {
-        if (card.id === action.card.id) {
+        if (card._wid === action.card._wid) {
           card.score = card.score + action.mark;
           return card;
         }

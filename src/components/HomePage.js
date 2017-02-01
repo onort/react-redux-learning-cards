@@ -6,17 +6,17 @@ import * as dataActions from '../actions/dataActions';
 const HomePage = ({ getData, topics }) => {
   const listTopics = topic => {
     return (
-      <li key={topic} onClick={() => getData(topic)}>
-        <Link to="/train">{topic}</Link>
-      </li>
+      <div key={topic.id} className="topic" onClick={() => getData(topic.name)}>
+        <Link className="topic-name" to="/train">{topic.name}</Link>
+        <span className="topic-length">{topic.length} <span className="smaller">words</span></span>
+        <span className="topic-taken">{topic.takenOn ? topic.takenOn : null}</span>
+      </div>
     );
   };
   return (
-    <div>
+    <div className="topics-container">
       <h3>Available Topics</h3>
-      <ul>
-        { topics ? topics.map(listTopics): null}
-      </ul>
+      { topics ? topics.map(listTopics): null}
     </div>
   );
 };

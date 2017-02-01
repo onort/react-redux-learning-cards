@@ -35,13 +35,13 @@ class TrainPage extends Component {
 
   render() {
     const { cards, info, handleReveal } = this.props;
-    const cardToRender = info.answered === false ? 
+    const cardToRender = cards.length > 1 && info.answered === false ? 
       <QuestionCard card={cards[info.currentCard]} handleReveal={handleReveal} /> : 
       <AnswerCard card={cards[info.currentCard]} handleMark={this.handleMark} />;
     return (
       <div>
         <TrainingStats info={info} />
-        { !info.loading ? cardToRender : <Loading /> }
+        { info.loading ? <Loading /> : cardToRender }
       </div>
     );
   }

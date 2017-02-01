@@ -2225,4 +2225,8 @@ export const sampleFromYandex2 = [
   }
 ];
 
-export const availableTopics = [ 'sampleFromYandex', 'sampleFromYandex2' ];
+// export const availableTopics = [ 'sampleFromYandex', 'sampleFromYandex2' ];
+export const availableTopics = [
+  { id: 1, name: 'sampleFromYandex', length: sampleFromYandex.length, takenOn: null },
+  { id: 2, name: 'sampleFromYandex2', length: sampleFromYandex2.length, takenOn: null }
+];

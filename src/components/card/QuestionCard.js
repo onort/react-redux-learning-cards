@@ -19,7 +19,7 @@ const QuestionCard = ({ card, handleReveal }) => {
 };
 
 QuestionCard.propTypes = {
-  card: PropTypes.object.isRequired,
+  card: PropTypes.object,
   handleReveal: PropTypes.func.isRequired
 };
 
