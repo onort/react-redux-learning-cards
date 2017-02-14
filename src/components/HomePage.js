@@ -6,7 +6,7 @@ import * as dataActions from '../actions/dataActions';
 const HomePage = ({ getData, topics }) => {
   const handleClick = (topicName) => {
     getData(topicName);
-    browserHistory.push('/train');
+    browserHistory.push(`/train/${topicName}`);
   };
 
   const listTopics = topic => {

@@ -10,7 +10,7 @@ import TrainingPage from './components/training/TrainingPage';
 export default (
   <Route path="/" component={App}>
     <IndexRoute component={HomePage} />
-    <Route path="/train" component={TrainingPage} />
+    <Route path="/train/:name" component={TrainingPage} />
     <Route path="/finished" component={TrainingEnd} />
     <Route path="*" component={NotFound}/>
   </Route>

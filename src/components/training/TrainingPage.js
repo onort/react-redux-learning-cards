@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { browserHistory, withRouter } from 'react-router';
+import { resetData } from '../../actions/dataActions';
 import * as infoActions from '../../actions/infoActions';
 
 import AnswerCard from '../card/AnswerCard';
@@ -34,6 +35,10 @@ class TrainPage extends Component {
     return true;
   }
 
+  componentWillUnmount() {
+    this.props.resetCards();
+  }
+
   routerWillLeave(nextLocation) {
     // return false to prevent a transition w/o prompting the user,
     // or return a string to allow the user to decide:
@@ -65,6 +70,7 @@ TrainPage.propTypes = {
   info: PropTypes.object,
   handleMark: PropTypes.func.isRequired,
   handleReveal: PropTypes.func.isRequired,
+  resetCards: PropTypes.func.isRequired,
   route: PropTypes.object.isRequired,
   router: PropTypes.object.isRequired,
   routes: PropTypes.array.isRequired
@@ -80,7 +86,8 @@ function mapStateToProps(state, ownProps) {
 function mapDispatchToProps(dispatch) {
   return {
     handleMark: (card, mark) => dispatch(infoActions.markCard(card, mark)),
-    handleReveal: () => dispatch(infoActions.revealAnswer())
+    handleReveal: () => dispatch(infoActions.revealAnswer()),
+    resetCards: () =>dispatch(resetData())
   };
 }
 

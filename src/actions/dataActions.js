@@ -13,3 +13,7 @@ export function getData(whichMockData) {
       });
   };
 }
+
+export function resetData() {
+  return { type: types.RESET_DATA };
+}
