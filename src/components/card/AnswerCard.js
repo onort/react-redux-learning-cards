@@ -28,7 +28,7 @@ const AnswerCard = ({ card, handleMark }) => {
 };
 
 AnswerCard.propTypes = {
-  card: PropTypes.object.isRequired,
+  card: PropTypes.object,
   handleMark: PropTypes.func.isRequired
 };
 

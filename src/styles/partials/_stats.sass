@@ -1,0 +1,35 @@
+// Stats
+.training-stats
+  position: relative
+  .stat
+    @include depth-1
+    margin: auto 6px
+    font-size: 1.6em
+    display: inline-block
+    width: 60px
+    height: 60px
+    line-height: 60px
+    text-align: center
+    background: white
+    
+    &.correct
+      color: $green
+    &.repeat
+      color: $orange
+    &.wrong
+      color: $red
+
+  .progress-bar
+    position: absolute
+    bottom: 10px
+    right: 0
+    width: 150px
+    height: 6px
+    background-color: lighten($mainText, 65%)
+    border-radius: 2px
+
+    > div 
+      background: $blue
+      height: 100%
+      overflow: hidden
+      transition: width 0.3s linear 0ms

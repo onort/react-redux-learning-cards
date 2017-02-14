@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router';
+import { browserHistory, withRouter } from 'react-router';
 import * as infoActions from '../../actions/infoActions';
 
 import AnswerCard from '../card/AnswerCard';
@@ -19,6 +19,19 @@ class TrainPage extends Component {
   componentDidMount() {
     // https://github.com/ReactTraining/react-router/blob/master/docs/guides/ConfirmingNavigation.md
     this.props.router.setRouteLeaveHook(this.props.route, this.routerWillLeave);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    const { currentCard, length } = nextProps.info;
+    if (currentCard >= length) {
+      browserHistory.push('/finished');
+    }
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    const { currentCard, length } = nextProps.info;
+    if (currentCard >= length) return false;
+    return true;
   }
 
   routerWillLeave(nextLocation) {

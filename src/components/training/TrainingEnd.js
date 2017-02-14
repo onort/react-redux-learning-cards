@@ -1,19 +1,42 @@
-import React, { PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux';
 
-const TrainingEnd = ({ info }) => {
-  const { correct, wrong, repeat } = info.answers;
-  return (
-    <div>
-      <h3>Done!</h3>
-      <h5>Correct: {correct}</h5>
-      <h5>Needs reapting: {repeat}</h5>
-      <h5>Wrong: {wrong}</h5>
-    </div>
-  );
-};
+class TrainingEnd extends Component {
+  constructor(props) {
+    super(props);
+    this.getPercentage = this.getPercentage.bind(this);
+  }
+
+  getPercentage(amount) {
+    const { length } = this.props.info;
+    if(length > 1) return (amount / length).toFixed(3) * 100;
+    return 0;
+  }
+
+  render() {
+  const { correct, wrong, repeat } = this.props.info.answers;
+  const info = this.props.info;
+    return (
+      <div className="card-container">
+        <h3>Done!</h3>
+        <div className="end-stats">
+          <p>Correct: {correct} <span className="percentage">{this.getPercentage(correct)}%</span></p>
+          <p>Needs repeating: {repeat} <span className="percentage">{this.getPercentage(repeat)}%</span></p>
+          <p>Wrong: {wrong} <span className="percentage">{this.getPercentage(wrong)}%</span></p>
+        </div>
+      </div>
+    );
+  }
+}
 
 TrainingEnd.propTypes = {
   info: PropTypes.object.isRequired
 };
 
-export default TrainingEnd;
+function mapStateToProps(state, ownProps) {
+  return {
+    info: state.info
+  };
+}
+
+export default connect(mapStateToProps)(TrainingEnd);

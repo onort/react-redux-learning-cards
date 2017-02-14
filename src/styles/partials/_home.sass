@@ -1,0 +1,35 @@
+// HomePage
+.topics-container
+  margin: 0 auto
+  min-width: 300px
+  max-width: 600px
+  width: 90%
+  text-align: center
+
+.topic
+  @include depth-1
+  @include smooth-transition
+  display: flex
+  margin: 10px
+  padding: 20px 30px
+  background: white
+  cursor: pointer
+  text-align: left
+
+  &:hover
+    @include depth-2
+
+  .topic-name
+    flex: 1
+    color: $mainText
+    margin-right: 20px
+  
+  .topic-length
+    font-size: 1.2em
+    letter-spacing: 2px
+    font-weight: 700
+
+    .smaller
+      font-size: .8em
+      font-weight: 500
+      letter-spacing: 1px

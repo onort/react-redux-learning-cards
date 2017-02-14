@@ -1,0 +1,54 @@
+$blue: #4078c0
+$green: rgb(72, 147, 91)
+$red: rgb(198, 53, 39)
+$orange: #e0b54e
+$mainText: #333
+$lightGray: rgb(232, 232, 232)
+$bg-color: #edecec
+$font: Helvetica, Arial, sans-serif
+$headerHeight: 60px
+$headerBg: #303030
+
+body
+  margin: 0
+  font-family: $font
+  color: $mainText
+  letter-spacing: .3px
+  background-color: $bg-color
+
+a
+  text-decoration: none
+  color: $blue
+  &:hover
+    color: $mainText
+
+button
+  outline: none
+
+.header
+  background: $headerBg
+  position: fixed
+  top: 0
+  left: 0
+  height: $headerHeight
+  width: 100%
+  padding: 0 60px
+
+  a
+    color: white
+
+  .brand
+    margin: 0
+    padding: 0
+    line-height: $headerHeight
+
+.main-container
+  max-width: 750px
+  margin: $headerHeight auto 0
+  padding: 10px
+
+// Loading 
+.loading-container
+  display: flex
+  height: 100%
+  justify-content: center

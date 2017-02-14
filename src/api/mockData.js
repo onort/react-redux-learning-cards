@@ -2225,8 +2225,211 @@ export const sampleFromYandex2 = [
   }
 ];
 
+export const shortSample = [
+  {
+    "_wid": "Syv4X3kul",
+    "word": "men",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "adamlar, erkekler, işçiler"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SJxwNQ31ug",
+    "word": "great",
+    "definitions": [
+      {
+        "pos": "adjective",
+        "meanings": [
+          "büyük, önemli, muazzam",
+          "iyi",
+          "harika, fantastik"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SybPEm3yOg",
+    "word": "tell",
+    "definitions": [
+      {
+        "pos": "verb",
+        "meanings": [
+          "söylemek, anlatmak, demek",
+          "haber vermek, uyarmak",
+          "emretmek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "S1GvVQhy_g",
+    "word": "found",
+    "definitions": [
+      {
+        "pos": "verb",
+        "meanings": [
+          "bulmak",
+          "kurmak, temelini atmak",
+          "dayanmak"
+        ]
+      },
+      {
+        "pos": "participle",
+        "meanings": [
+          "tespit"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "S17vNX2kug",
+    "word": "say",
+    "definitions": [
+      {
+        "pos": "verb",
+        "meanings": [
+          "demek, söylemek, bildirmek",
+          "saymak",
+          "tekrarlamak"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "söz, laf, son söz"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "r1NwNm21Og",
+    "word": "every",
+    "definitions": [
+      {
+        "pos": "adjective",
+        "meanings": [
+          "her, bütün, her bir"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "B1Sw4XnkOx",
+    "word": "between",
+    "definitions": [
+      {
+        "pos": "adverb",
+        "meanings": [
+          "arada, arasına, araya"
+        ]
+      },
+      {
+        "pos": "preposition",
+        "meanings": [
+          "arasında"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "Hy8wVX3J_g",
+    "word": "small",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "küçükler",
+          "küçüklük",
+          "arka"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "küçük, az, hafif",
+          "küçücük, minik, ufacık"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "BkDw4Q3kux",
+    "word": "still",
+    "definitions": [
+      {
+        "pos": "adverb",
+        "meanings": [
+          "halâ, hâlâ, yine",
+          "hala, daha, henüz",
+          "halen"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "hareketsiz",
+          "sessiz, sakin, durgun"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "durdurmak, susturmak",
+          "sakinleşmek, yatışmak",
+          "yatıştırmak"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "hareketsizlik, sükunet",
+          "dingin",
+          "damıtıcı, imbik"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SyuPVmhyOg",
+    "word": "name",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "ad, isim, ün",
+          "ada",
+          "adlı"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "adlandırmak, isimlendirmek",
+          "söylemek, isim vermek, ad koymak"
+        ]
+      }
+    ],
+    "score": null
+  }
+];
+
 // export const availableTopics = [ 'sampleFromYandex', 'sampleFromYandex2' ];
 export const availableTopics = [
   { id: 1, name: 'sampleFromYandex', length: sampleFromYandex.length, takenOn: null },
-  { id: 2, name: 'sampleFromYandex2', length: sampleFromYandex2.length, takenOn: null }
+  { id: 2, name: 'sampleFromYandex2', length: sampleFromYandex2.length, takenOn: null },
+  { id: 3, name: 'shortSample', length: shortSample.length, takenOn: null }
 ];
