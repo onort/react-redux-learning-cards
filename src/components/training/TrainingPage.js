@@ -35,15 +35,10 @@ class TrainPage extends Component {
     return true;
   }
 
-  componentWillUnmount() {
-    this.props.resetCards();
-  }
-
   routerWillLeave(nextLocation) {
     // return false to prevent a transition w/o prompting the user,
     // or return a string to allow the user to decide:
-    if (this.props.router)
-      // console.log(nextLocation);
+    if (nextLocation.pathname !== '/finished')
       return 'This will reset your training progress';
   }
 

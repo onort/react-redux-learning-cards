@@ -1,8 +1,14 @@
 import React, { PropTypes } from 'react';
+import { browserHistory, withRouter } from 'react-router';
 
 import CardHeader from './CardHeader';
 
 const QuestionCard = ({ card, handleReveal }) => {
+  const handleFinish = () => {
+    // Show a modal instead
+    confirm('Are you sure that you want to finish your training?');
+    browserHistory.push('/finished');
+  };
   return (
     <div className="card-container">
       <CardHeader title="Oxford 3000" />

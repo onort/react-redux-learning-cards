@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
+import { resetData } from '../../actions/dataActions';
 
 class TrainingEnd extends Component {
   constructor(props) {
@@ -7,14 +8,18 @@ class TrainingEnd extends Component {
     this.getPercentage = this.getPercentage.bind(this);
   }
 
+  componentWillUnmount() {
+    this.props.resetCards();
+  }
+
   getPercentage(amount) {
-    const { length } = this.props.info;
-    if(length > 1) return (amount / length).toFixed(3) * 100;
+    const { currentCard } = this.props.info;
+    if(currentCard > 1) return ((amount / currentCard) * 100).toFixed(1);
     return 0;
   }
 
   render() {
-  const { correct, wrong, repeat } = this.props.info.answers;
+  const { correct, wrong, repeat } = this.props.info;
   const info = this.props.info;
     return (
       <div className="card-container">
@@ -30,7 +35,8 @@ class TrainingEnd extends Component {
 }
 
 TrainingEnd.propTypes = {
-  info: PropTypes.object.isRequired
+  info: PropTypes.object.isRequired,
+  resetCards: PropTypes.func.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
@@ -39,4 +45,10 @@ function mapStateToProps(state, ownProps) {
   };
 }
 
-export default connect(mapStateToProps)(TrainingEnd);
+function mapDispatchToProps(dispatch) {
+  return {
+    resetCards: () =>dispatch(resetData())
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(TrainingEnd);
