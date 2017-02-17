@@ -2427,8 +2427,2697 @@ export const shortSample = [
   }
 ];
 
+export const sample3 = [
+  {
+    "_wid": "Hy3w_iNKg",
+    "word": "home",
+    "definitions": [
+      {
+        "pos": "adverb",
+        "meanings": [
+          "evde, eve, ülkesinde"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "ev, konut, yurt",
+          "İçişleri",
+          "ana"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "evdeki, evde yapılan, eve ait"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "hedeflemek",
+          "yuvasına dönmek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "rJgnv_i4Fx",
+    "word": "should",
+    "definitions": [
+      {
+        "pos": "verb",
+        "meanings": [
+          "-meli",
+          "-meliydi",
+          "-malıydı"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "Hy-hP_iVtg",
+    "word": "under",
+    "definitions": [
+      {
+        "pos": "preposition",
+        "meanings": [
+          "altından, altı, aşağısına",
+          "altında",
+          "bağlı"
+        ]
+      },
+      {
+        "pos": "adverb",
+        "meanings": [
+          "altına, altında, altta",
+          "dibe"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "alt",
+          "az"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "ByG2vusNtx",
+    "word": "last",
+    "definitions": [
+      {
+        "pos": "adjective",
+        "meanings": [
+          "son, geçen, en son",
+          "önceki",
+          "son derece"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "son, son şey, sonuncu kimse",
+          "ölüm",
+          "Ayakkabı kalıbı"
+        ]
+      },
+      {
+        "pos": "adverb",
+        "meanings": [
+          "son, son kez",
+          "sonunda, son olarak",
+          "sonuç olarak"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "geçmek",
+          "yetmek",
+          "sürmek, devam etmek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "HyQ3Ddj4Yg",
+    "word": "air",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "hava, gökyüzü, hafif rüzgâr",
+          "Klima",
+          "rüzgar"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "hava"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "kurutmak, havalandırmak, ortaya dökmek",
+          "açılmak",
+          "söylemek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "HkV2wOoEtg",
+    "word": "big",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "büyüklük",
+          "büyükçe",
+          "koca"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "büyük, iri, önemli",
+          "çok"
+        ]
+      },
+      {
+        "pos": "adverb",
+        "meanings": [
+          "büyük, övünerek",
+          "çok, fazla"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "BJBhw_i4Ye",
+    "word": "line",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "satır, hat, çizgi",
+          "satırlık",
+          "çizgisel"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "çizmek, doldurmak, kaplamak",
+          "hizalamak"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "BkIhPdsEFx",
+    "word": "give",
+    "definitions": [
+      {
+        "pos": "verb",
+        "meanings": [
+          "vermek, yapıvermek, sunmak",
+          "eğmek",
+          "tanımak"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "uysallık, esneklik",
+          "yumuşaklık"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "rywnDdoNYe",
+    "word": "left",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "solcu",
+          "sol",
+          "kalandır"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "sol, soldaki, artık"
+        ]
+      },
+      {
+        "pos": "adverb",
+        "meanings": [
+          "sola"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "r1uhvui4Kg",
+    "word": "own",
+    "definitions": [
+      {
+        "pos": "verb",
+        "meanings": [
+          "sahiplenmek",
+          "sahip olmak",
+          "kabullenmek, kabul etmek, itiraf etmek"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "öz"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "rkt3vuiNtx",
+    "word": "set",
+    "definitions": [
+      {
+        "pos": "verb",
+        "meanings": [
+          "ayarlamak, düzenlemek, saldırtmak",
+          "yaptırmak, yapmak",
+          "yerleştirmek, yerleşmek, koymak"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "ayar",
+          "alıcı, gidiş yönü",
+          "kurulma"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "kurulmuş, belirlenmiş",
+          "yapmacık, içten olmayan",
+          "değişmez, sabit"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SJcnv_jEFe",
+    "word": "end",
+    "definitions": [
+      {
+        "pos": "verb",
+        "meanings": [
+          "sonlandırmak",
+          "sonlanmak",
+          "sona ermek, ölmek, son vermek"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "son, nihai",
+          "ölüm",
+          "bitiş"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "B1j2POsNKx",
+    "word": "us",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "ABD",
+          "Amerika",
+          "Amerikalı"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "By3hvOj4Yl",
+    "word": "while",
+    "definitions": [
+      {
+        "pos": "conjunction",
+        "meanings": [
+          "ise",
+          "sırasında",
+          "karşın"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "süre",
+          "zaman, vakit",
+          "müddet"
+        ]
+      },
+      {
+        "pos": "adverb",
+        "meanings": [
+          "iken"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "rJ6nwdsNFe",
+    "word": "read",
+    "definitions": [
+      {
+        "pos": "adjective",
+        "meanings": [
+          "okunan, okumuş, bilgili",
+          "Aydın"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "okumak, okuluna gitmek",
+          "okutmak",
+          "anlamak"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "okuma",
+          "salt"
+        ]
+      },
+      {
+        "pos": "participle",
+        "meanings": [
+          "deva"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "ryAhDdi4Yl",
+    "word": "along",
+    "definitions": [
+      {
+        "pos": "adverb",
+        "meanings": [
+          "birlikte, beraberinde",
+          "ileri, boyunca, süresince",
+          "yanında"
+        ]
+      },
+      {
+        "pos": "preposition",
+        "meanings": [
+          "boyunca"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "B11x2vujVKg",
+    "word": "next",
+    "definitions": [
+      {
+        "pos": "adjective",
+        "meanings": [
+          "sonraki, ertesi, bir dahaki",
+          "gelecek, önümüzdeki, müstakbel",
+          "öteki, öbür"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "sonraki, bir sonraki",
+          "ileri"
+        ]
+      },
+      {
+        "pos": "preposition",
+        "meanings": [
+          "yanına, yanında",
+          "neredeyse",
+          "en yakın"
+        ]
+      },
+      {
+        "pos": "adverb",
+        "meanings": [
+          "bir sonra, daha sonra"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "S1xe3v_jNFe",
+    "word": "might",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "güç, zor, kuvvet"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "olası olmak, mümkün olmak",
+          "-ebilmek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "r1behv_jNKe",
+    "word": "never",
+    "definitions": [
+      {
+        "pos": "adverb",
+        "meanings": [
+          "hiç, asla, hiçbir zaman"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SyzxnD_oVtl",
+    "word": "sound",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "ses, gürültü",
+          "sesçi",
+          "etki"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "ses, sapasağlam",
+          "iyi",
+          "yerinde"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "görünmek",
+          "çalınmak, söylemek, ses vermek",
+          "çalmak"
+        ]
+      },
+      {
+        "pos": "adverb",
+        "meanings": [
+          "mışıl mışıl"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "ry7gnwuiNKx",
+    "word": "below",
+    "definitions": [
+      {
+        "pos": "adverb",
+        "meanings": [
+          "aşağı, aşağıda, alt katta",
+          "altında, altta"
+        ]
+      },
+      {
+        "pos": "preposition",
+        "meanings": [
+          "aşağı, altında"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "Sy4l2vOjVte",
+    "word": "something",
+    "definitions": [
+      {
+        "pos": "pronoun",
+        "meanings": [
+          "birşey",
+          "bişi"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "H1Henv_jEYl",
+    "word": "saw",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "testere, atasözü",
+          "sav"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "testere ile kesmek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "B1Lx2v_oEYx",
+    "word": "thought",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "düşünce, düşünme, sanı",
+          "düşünüş",
+          "düşünsel"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "sanılan"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SJvxhwdsEtl",
+    "word": "both",
+    "definitions": [
+      {
+        "pos": "determiner / pronoun",
+        "meanings": [
+          "iki",
+          "hem"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "ikisi de"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SkOg2wui4Fx",
+    "word": "those",
+    "definitions": [
+      {
+        "pos": "determiner / pronoun",
+        "meanings": [
+          "bunca",
+          "onca",
+          "onlar"
+        ]
+      },
+      {
+        "pos": "determiner",
+        "meanings": [
+          "oradaki"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "ryFlhDuiVFg",
+    "word": "few",
+    "definitions": [
+      {
+        "pos": "adjective",
+        "meanings": [
+          "birkaçı",
+          "kaç",
+          "az, azıcık"
+        ]
+      },
+      {
+        "pos": "determiner / pronoun",
+        "meanings": [
+          "bazısı"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "az miktar"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "S15e2vOsEYl",
+    "word": "always",
+    "definitions": [
+      {
+        "pos": "adverb",
+        "meanings": [
+          "her zaman, hep, daima",
+          "durmadan",
+          "mutlaka"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "BJse2Dui4Ye",
+    "word": "show",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "gösteri, gösteriş, şov",
+          "harita",
+          "Gösterim"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "göstermek, görünmek, belirtmek",
+          "izletmek",
+          "açıklamak"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "B1hghDOsEtl",
+    "word": "large",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "büyüklük",
+          "büyükçe",
+          "çaplı"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "büyük, iri, geniş"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "Byal3PdiEFg",
+    "word": "often",
+    "definitions": [
+      {
+        "pos": "adverb",
+        "meanings": [
+          "genellikle, genelde, çoğunlukla",
+          "sıkça, sık sık, çoğu kez",
+          "çok"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "sık"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SkCl3POsNYx",
+    "word": "together",
+    "definitions": [
+      {
+        "pos": "adverb",
+        "meanings": [
+          "birlikte, beraberce, beraber"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "buluşma"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "rky-2Ddj4Kg",
+    "word": "house",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "ev, konut, yurt",
+          "bina",
+          "Saray"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "ev"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "barındırmak, eve yerleştirmek, ev sağlamak",
+          "barınmak"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "BJgWhDdi4Yl",
+    "word": "going",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "gidiş, gidişat",
+          "gider",
+          "geçme"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "giden"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "ry-b3vOjEte",
+    "word": "world",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "dünya, alem, yeryüzü",
+          "dünyaca",
+          "gezegen"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "dünya"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "S1fWnvdsVtl",
+    "word": "school",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "okul, lise, ortaokul",
+          "okullu",
+          "öğretim, fakülte"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "eğitmek, yetiştirmek, terbiye etmek",
+          "öğretmek, ders vermek",
+          "okula göndermek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "S17ZnP_iVFe",
+    "word": "want",
+    "definitions": [
+      {
+        "pos": "verb",
+        "meanings": [
+          "istemek, gerektirmek, ihtiyacı olmak"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "gereksinim, ihtiyaç, lüzum",
+          "yokluk, arzu, istek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "HJVW2v_j4Kl",
+    "word": "important",
+    "definitions": [
+      {
+        "pos": "adjective",
+        "meanings": [
+          "önemli, ciddi, mühim",
+          "değerli, saygın",
+          "kendini beğenmiş, kibirli"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "rJS-nvuo4te",
+    "word": "form",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "form, şekil, yapı",
+          "tür, sınıf, çeşit",
+          "biçimli"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "oluşturmak, kurmak, şekil almak",
+          "şekillendirmek, biçimlendirmek, şekil vermek",
+          "düzenlemek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "rJIZnvOjEtg",
+    "word": "until",
+    "definitions": [
+      {
+        "pos": "preposition",
+        "meanings": [
+          "kadar, değin"
+        ]
+      },
+      {
+        "pos": "conjunction",
+        "meanings": [
+          "ta"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SkPW2wds4Yg",
+    "word": "food",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "yem, yemek, yiyecek",
+          "yemeksiz",
+          "yemekli"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "Sk6vuiEKl",
+    "word": "feet",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "ayaklar"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "HylTwuo4Fx",
+    "word": "keep",
+    "definitions": [
+      {
+        "pos": "verb",
+        "meanings": [
+          "tutmak, devam ettirmek, alıkoymak",
+          "etmek, kılmak",
+          "kalmak, durmak"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "yiyecek",
+          "saklama",
+          "bakım"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "rkbpD_sVte",
+    "word": "boy",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "oğul, oğlan, erkek çocuk",
+          "evlat",
+          "adamlar"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "BkGpv_oVte",
+    "word": "without",
+    "definitions": [
+      {
+        "pos": "preposition",
+        "meanings": [
+          "olarak",
+          "olmadan",
+          "onsuz"
+        ]
+      },
+      {
+        "pos": "adverb",
+        "meanings": [
+          "olmadan, olmaksızın"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "dış"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "rymaPdjEFg",
+    "word": "side",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "taraflı",
+          "taraf",
+          "yan, böğür"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "yandaki, yanındaki",
+          "yan",
+          "ikincil, ikinci derecede"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "taraf tutmak"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "BkETv_oNtl",
+    "word": "land",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "toprak",
+          "arazi",
+          "ülke, diyar, memleket"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "yenmek",
+          "yapmak",
+          "indirmek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "S1B6wuoVKe",
+    "word": "once",
+    "definitions": [
+      {
+        "pos": "adverb",
+        "meanings": [
+          "bir kere, bir zamanlar, bir defa",
+          "eskiden",
+          "önceleri"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "bir kere"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "rkL6w_iNte",
+    "word": "sometimes",
+    "definitions": [
+      {
+        "pos": "adverb",
+        "meanings": [
+          "bazen, ara sıra"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "H1wawdj4tg",
+    "word": "enough",
+    "definitions": [
+      {
+        "pos": "determiner / pronoun",
+        "meanings": [
+          "yetersiz",
+          "kadar",
+          "kafi"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "yeterli, kâfi"
+        ]
+      },
+      {
+        "pos": "adverb",
+        "meanings": [
+          "yeterince"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "yeterli miktar"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "B1OawOiEte",
+    "word": "life",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "hayat, yaşam, canlılık",
+          "yaşasın",
+          "yaşayış"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "ByFTPuoEFx",
+    "word": "head",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "baş, ana, lider",
+          "kafa, kelle, tura",
+          "kafalı"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "baş, baştaki",
+          "baş ile ilgili"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "gitmek",
+          "kullanmak",
+          "yönetmek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "Hy5pPOj4Fl",
+    "word": "four",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "dört, dörtlü",
+          "Dörtler"
+        ]
+      },
+      {
+        "pos": "numeral",
+        "meanings": [
+          "dördün",
+          "kırk",
+          "dörder"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "dört"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SJi6PdjEKx",
+    "word": "kind",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "tür, çeşit, tip",
+          "türdü",
+          "tarz"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "iyi",
+          "nazik",
+          "hoş"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "Hk2av_iEtl",
+    "word": "above",
+    "definitions": [
+      {
+        "pos": "preposition",
+        "meanings": [
+          "üzerinde, üzerine, üstünde",
+          "üstün, yüksek",
+          "öte"
+        ]
+      },
+      {
+        "pos": "adverb",
+        "meanings": [
+          "yukarıda, önce, daha çok",
+          "yukarda"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "sözü geçen"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "BkT6wdoVYe",
+    "word": "almost",
+    "definitions": [
+      {
+        "pos": "adverb",
+        "meanings": [
+          "neredeyse, hemen hemen, az kalsın"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "Sk0aD_sNYe",
+    "word": "page",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "sayfacık",
+          "sayfa, içoğlanı",
+          "Komi"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "çağrı cihazını aramak"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "ryJlTPOjEKx",
+    "word": "live",
+    "definitions": [
+      {
+        "pos": "verb",
+        "meanings": [
+          "yaşamak, oturmak, hayatta kalmak",
+          "yaşatmak",
+          "geçinmek"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "yaşayan, canlı, yanmamış",
+          "hareketli, elektrikli"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "HklgpD_j4te",
+    "word": "earth",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "dünya, in, yeryüzü",
+          "dünyalı",
+          "yer"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "topraklamak",
+          "toprakla örtmek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "B1-xaPdsVFx",
+    "word": "got",
+    "definitions": [
+      {
+        "pos": "participle",
+        "meanings": [
+          "göt"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "HJGgTDdj4Fe",
+    "word": "far",
+    "definitions": [
+      {
+        "pos": "adverb",
+        "meanings": [
+          "uzakta, uzağa",
+          "uzak"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "ileri",
+          "uzaklık",
+          "kadarki"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "uzak",
+          "öteki, öbür"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "rkmeTwdjEFx",
+    "word": "need",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "gereksinim, gerek, ihtiyaç",
+          "gereklilik"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "ihtiyacı olmak, muhtaç olmak"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "H1VgpvdiEYe",
+    "word": "hand",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "el, taraf, yardım",
+          "elli",
+          "elim"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "el"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "vermek, uzatmak",
+          "yardım etmek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "r1Se6wOs4Yl",
+    "word": "high",
+    "definitions": [
+      {
+        "pos": "adjective",
+        "meanings": [
+          "yüksek, ileri, üstün",
+          "Soylu"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "Yüksel",
+          "yükseklik, yükselme, zirve",
+          "lise"
+        ]
+      },
+      {
+        "pos": "adverb",
+        "meanings": [
+          "yüksekte, yükseğe"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "r1IxTP_o4Yl",
+    "word": "mother",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "anne, ana",
+          "annecik",
+          "anam"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "annelik etmek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "rkweTwui4Fg",
+    "word": "year",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "yıllık, senelik",
+          "yıl, sene, yılbaşı",
+          "yaşındaki"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SyOepDOjNtl",
+    "word": "parts",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "parçalar, bölge, yetenek",
+          "Semt"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "ByFx6DOi4Ye",
+    "word": "father",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "baba, peder, kurucu",
+          "babalık",
+          "babasız"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "babası olmak, yaratmak, yüklemek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SJ9gTDusEtx",
+    "word": "light",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "ışık, lamba, aydınlatma",
+          "ışıklı",
+          "ışıksız"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "ışıklandırmak, aydınlatmak, ışımak",
+          "inmek",
+          "yanmak, yakmak"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "hafif, tatlı, yumuşak",
+          "açık",
+          "umursamaz"
+        ]
+      },
+      {
+        "pos": "adverb",
+        "meanings": [
+          "hafif",
+          "kolayca"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "BJolaDOiVKg",
+    "word": "country",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "ülke, toprak, memleket",
+          "devlet",
+          "Yurdu"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "kırsal, köy",
+          "taşra, taşraya ait"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SJhgaDdiEYg",
+    "word": "let",
+    "definitions": [
+      {
+        "pos": "verb",
+        "meanings": [
+          "izin vermek, bırakmak, ses çıkarmamak",
+          "yummak",
+          "boşvermek"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "let, kiraya verme",
+          "engel"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "BJ6e6wuiNYl",
+    "word": "following",
+    "definitions": [
+      {
+        "pos": "participle",
+        "meanings": [
+          "aşağı",
+          "takip",
+          "takipçi"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "izleyen, sonraki, ertesi",
+          "şu",
+          "müteakip"
+        ]
+      },
+      {
+        "pos": "preposition",
+        "meanings": [
+          "sonra"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "taraftarlar, hayran kitlesi"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "ByCeTv_oNtl",
+    "word": "night",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "gece, akşam, gündüz",
+          "gecelik",
+          "geceni"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "rkJbTwuoEFg",
+    "word": "second",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "ikincilik, ikinci, saniye",
+          "ikinciler",
+          "ikici"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "ikinci, ikinci dereceli, öbür"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "desteklemek, yardım etmek",
+          "destek vermek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "Sye-pvOoNKg",
+    "word": "being",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "olma, yapı, varlık"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "ry-ZpP_sNKx",
+    "word": "picture",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "resim, görüntü, çizim",
+          "fotoğraf, foto",
+          "film, tasvir"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "resimli, resim, film"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "çizmek, yansıtmak, resmetmek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "r1zb6vdj4Kg",
+    "word": "study",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "çalışma",
+          "araştırma, inceleme",
+          "öğrenim, eğitim"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "çalışmak, çabalamak, gayret etmek",
+          "araştırmak, incelemek",
+          "öğrenmek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SJ7ZaDdoEte",
+    "word": "story",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "hikaye",
+          "hikâye, öykü, kıssa",
+          "haber"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "HJNbaPdjVYe",
+    "word": "soon",
+    "definitions": [
+      {
+        "pos": "adverb",
+        "meanings": [
+          "yakında, birazdan, çok geçmeden",
+          "erken, erkenden, çabuk",
+          "hemen, neredeyse, derhal"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "rJ0vOo4Fl",
+    "word": "times",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "kez, defa, kere"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "rklAv_j4Ye",
+    "word": "since",
+    "definitions": [
+      {
+        "pos": "adverb",
+        "meanings": [
+          "beri, o zamandan beri"
+        ]
+      },
+      {
+        "pos": "conjunction",
+        "meanings": [
+          "çünkü, zira",
+          "madem",
+          "mademki"
+        ]
+      },
+      {
+        "pos": "preposition",
+        "meanings": [
+          "-den beri"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "ByZCDdjEYg",
+    "word": "white",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "beyazlık, beyaz",
+          "beyazlar",
+          "beyazlı"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "beyaz, temiz, solgun",
+          "AK",
+          "zararsız, masum"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "BJfCvuoEYx",
+    "word": "hard",
+    "definitions": [
+      {
+        "pos": "adjective",
+        "meanings": [
+          "sabit, sert, sıkı",
+          "zorlu, zor, güç",
+          "sağlam, dayanıklı"
+        ]
+      },
+      {
+        "pos": "adverb",
+        "meanings": [
+          "zorla, sert",
+          "sıkı, sıkıca",
+          "yakın"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "sert penis"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "Bk7RvuoNFl",
+    "word": "paper",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "kağıt",
+          "kâğıt, gazete, rapor",
+          "belge, bildiri, doküman"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "kâğıt, geçersiz, önemsiz"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "kâğıt kaplamak, zımparalamak, duvar kâğıdı kaplamak"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "HkERDuiVKe",
+    "word": "ever",
+    "definitions": [
+      {
+        "pos": "adverb",
+        "meanings": [
+          "hiç, asla, giderek",
+          "en",
+          "daha"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SJrRw_iNFe",
+    "word": "near",
+    "definitions": [
+      {
+        "pos": "adverb",
+        "meanings": [
+          "yakında, yakın",
+          "yakınlarda",
+          "yaklaşık olarak"
+        ]
+      },
+      {
+        "pos": "preposition",
+        "meanings": [
+          "yakın, bitişik",
+          "yanında"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "yakın",
+          "samimi",
+          "cimri"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "yaklaşmak"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "ry8CvdoVKe",
+    "word": "better",
+    "definitions": [
+      {
+        "pos": "verb",
+        "meanings": [
+          "iyileştirmek, geçmek, geliştirmek",
+          "düzeltmek"
+        ]
+      },
+      {
+        "pos": "adverb",
+        "meanings": [
+          "daha iyi, daha iyi şekilde"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "daha iyi"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "daha iyisi"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SkP0PuiVKg",
+    "word": "best",
+    "definitions": [
+      {
+        "pos": "adverb",
+        "meanings": [
+          "en, en çok, en iyi şekilde"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "yenmek, alt etmek",
+          "geçmek"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "en iyi, birinci sınıf"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "By_APus4Kl",
+    "word": "across",
+    "definitions": [
+      {
+        "pos": "preposition",
+        "meanings": [
+          "birden",
+          "içinden, ortasından, üstünden",
+          "karşı, karşısında"
+        ]
+      },
+      {
+        "pos": "adverb",
+        "meanings": [
+          "genişliğinde, karşıdan karşıya",
+          "çapraz"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "r1YAw_jEFl",
+    "word": "sentence",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "cümle, söz, tümce",
+          "cümlelik",
+          "karar, hüküm"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "mahkum etmek, ceza vermek, hüküm giydirmek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "HycAPui4Fg",
+    "word": "others",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "eller"
+        ]
+      },
+      {
+        "pos": "pronoun",
+        "meanings": [
+          "bazısı",
+          "kimisi"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "H1sRvusVYe",
+    "word": "today",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "bugünkü",
+          "bugün",
+          "gün"
+        ]
+      },
+      {
+        "pos": "adverb",
+        "meanings": [
+          "bugün"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "r1nCwOiVKx",
+    "word": "during",
+    "definitions": [
+      {
+        "pos": "preposition",
+        "meanings": [
+          "sırasında",
+          "boyunca, esnasında"
+        ]
+      },
+      {
+        "pos": "adverb",
+        "meanings": [
+          "iken"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "rJpCvuj4Yx",
+    "word": "however",
+    "definitions": [
+      {
+        "pos": "adverb",
+        "meanings": [
+          "ancak, halbuki",
+          "birlikte",
+          "yine, gene"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "HJCRPuoEKe",
+    "word": "means",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "anlama",
+          "anlam",
+          "aracı"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "BJyxAPOjEtl",
+    "word": "sure",
+    "definitions": [
+      {
+        "pos": "adjective",
+        "meanings": [
+          "emin, kesin, sağlam",
+          "şüphesiz, muhakkak"
+        ]
+      },
+      {
+        "pos": "adverb",
+        "meanings": [
+          "kesinlikle, elbette, şüphesiz"
+        ]
+      },
+      {
+        "pos": "interjection",
+        "meanings": [
+          "kesinlik"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "rJllRDuo4Fe",
+    "word": "try",
+    "definitions": [
+      {
+        "pos": "verb",
+        "meanings": [
+          "çalışmak, çabalamak, gayret etmek",
+          "denemek, yapınmak, yargılamak",
+          "uğraşmak"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "deneme, çaba"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "Sy-eRP_iVYe",
+    "word": "young",
+    "definitions": [
+      {
+        "pos": "adjective",
+        "meanings": [
+          "genç, küçük, acemi"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "küçük, yavru",
+          "küçükler",
+          "gencecik"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SkMxCw_oNtx",
+    "word": "miles",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "kilometrelerce",
+          "mil"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "H17gAvuoEKe",
+    "word": "sun",
+    "definitions": [
+      {
+        "pos": "verb",
+        "meanings": [
+          "güneşlendirmek, güneşlenmek, güneşte bırakmak"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "güneş, güneş ışığı",
+          "şezlong"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "ByEl0wdsEKe",
+    "word": "whole",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "tüm, toplam",
+          "bütünlük",
+          "bütünsel"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "tüm, bütün",
+          "tam",
+          "sağlam"
+        ]
+      },
+      {
+        "pos": "adverb",
+        "meanings": [
+          "tamamen, bütün bütün"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SkBx0DdjVYg",
+    "word": "thing",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "şey, iş, eşya",
+          "olay",
+          "birşey"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "ryUgCwujVtx",
+    "word": "example",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "örnek, ders, misal",
+          "örneklem"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "ByvxRPujVFx",
+    "word": "hear",
+    "definitions": [
+      {
+        "pos": "verb",
+        "meanings": [
+          "duymak, işitmek, dinlemek",
+          "duyurmak"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "Bk_gRvdsVFl",
+    "word": "heard",
+    "definitions": [
+      {
+        "pos": "participle",
+        "meanings": [
+          "duyulmamış",
+          "haber"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "Hktl0wdoEFl",
+    "word": "several",
+    "definitions": [
+      {
+        "pos": "determiner",
+        "meanings": [
+          "birkaçı",
+          "birçok",
+          "bazı"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "birkaç, birtakım, birbirinden farklı",
+          "farklı, değişik"
+        ]
+      },
+      {
+        "pos": "noun",
+        "meanings": [
+          "birkaç"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SJ5xADOiNFx",
+    "word": "change",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "değişim, değişme, değişiklik",
+          "değişen",
+          "değişikli"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "değiştirmek, değişmek, dönüşmek",
+          "aktarmak",
+          "bozmak"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "HkjlRD_iNYl",
+    "word": "room",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "odalı",
+          "oda, yer, neden"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "oturmak, kalmak"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "B1nlRPdoVtg",
+    "word": "answer",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "cevap, yanıt, karşılık",
+          "cevaplı",
+          "cevabi"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "cevaplandırmak",
+          "cevap vermek, yanıtlamak, karşılık vermek",
+          "cevaplamak, yetmek, uymak"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SJaeAPus4tx",
+    "word": "sea",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "deniz, dalga",
+          "manzaralı",
+          "Karadeniz"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "deniz, denizle ilgili"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "B1AeAvuoNKg",
+    "word": "against",
+    "definitions": [
+      {
+        "pos": "preposition",
+        "meanings": [
+          "karşısında, karşı, aleyhinde"
+        ]
+      },
+      {
+        "pos": "adverb",
+        "meanings": [
+          "karşı, ters olarak"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "aleyhte"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "H1JWRwdiEYe",
+    "word": "turned",
+    "definitions": [
+      {
+        "pos": "participle",
+        "meanings": [
+          "açık",
+          "devre",
+          "dönük"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "katlanmış, kıvrık"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SJx-0PuiNtl",
+    "word": "top",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "üstlük, üst, baş",
+          "ilk",
+          "başlıca"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "üst, en iyi, tepe"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "geçmek, aşmak",
+          "kapamak, üstünü kapamak, alt etmek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "HJ--Av_iNYx",
+    "word": "learn",
+    "definitions": [
+      {
+        "pos": "verb",
+        "meanings": [
+          "öğrenmek, edinmek",
+          "bilgilenmek",
+          "öğretmek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SyfZAwOiNte",
+    "word": "city",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "şehir, kent, şehir halkı",
+          "şehirli",
+          "Merkez"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "kent"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "HkQWRwdiVYx",
+    "word": "point",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "nokta, an, özellik",
+          "puanlık",
+          "puanlı"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "noktalamak, göstermek, işaret etmek",
+          "sivrilmek, sivriltmek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "SJEZ0w_o4Yg",
+    "word": "five",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "beşinci",
+          "Beşler",
+          "beş"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "beş"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "ByrbAD_sVte",
+    "word": "using",
+    "definitions": [
+      {
+        "pos": "participle",
+        "meanings": [
+          "kullanım",
+          "istimal"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "S1LbAP_s4Fx",
+    "word": "play",
+    "definitions": [
+      {
+        "pos": "noun",
+        "meanings": [
+          "oynama, çalma, gösteri",
+          "oynayan",
+          "oynayış"
+        ]
+      },
+      {
+        "pos": "verb",
+        "meanings": [
+          "oynamak, hareket etmek, rol almak",
+          "çalmak",
+          "yürütmek"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "HyDZ0D_oNYl",
+    "word": "toward",
+    "definitions": [
+      {
+        "pos": "preposition",
+        "meanings": [
+          "karşı",
+          "-e doğru",
+          "-e karşı"
+        ]
+      },
+      {
+        "pos": "adjective",
+        "meanings": [
+          "Uysal",
+          "yumuşak başlı"
+        ]
+      }
+    ],
+    "score": null
+  },
+  {
+    "_wid": "HyyudiEtg",
+    "word": "usually",
+    "definitions": [
+      {
+        "pos": "adverb",
+        "meanings": [
+          "genelde, genellikle, çoğunlukla"
+        ]
+      }
+    ],
+    "score": null
+  }
+];
+
 export const availableTopics = [
   { id: 1, name: 'sampleFromYandex', length: sampleFromYandex.length, takenOn: null },
   { id: 2, name: 'sampleFromYandex2', length: sampleFromYandex2.length, takenOn: null },
-  { id: 3, name: 'shortSample', length: shortSample.length, takenOn: null }
+  { id: 3, name: 'shortSample', length: shortSample.length, takenOn: null },
+  { id: 4, name: 'sample3', length: sample3.length, takenOn: null }
 ];

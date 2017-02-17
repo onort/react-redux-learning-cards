@@ -16,8 +16,9 @@ const QuestionCard = ({ card, handleReveal }) => {
         <h3 className="question"><small>What is the meaning of </small><br /> {card.word}?</h3>
       </div>
       <div className="card-actions">
-        <button className="lc-button-inverted reveal" onClick={() => handleReveal()}>
-          <i className="material-icons">speaker_notes</i>
+        <h4>Show Definition</h4>
+        <button className="button-inverted reveal" onClick={() => handleReveal()}>
+          <i className="material-icons">redo</i>
         </button>
       </div>
     </div>
