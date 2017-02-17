@@ -3,9 +3,12 @@ import { browserHistory } from 'react-router';
 import { connect } from 'react-redux';
 import * as dataActions from '../actions/dataActions';
 
-const HomePage = ({ getData, topics }) => {
+const HomePage = ({ getData, info, resetCards, topics }) => {
   const handleClick = (topicName) => {
-    getData(topicName);
+    if (info.activeList !== topicName) {
+      resetCards();
+      getData(topicName); 
+    }
     browserHistory.push(`/train/${topicName}`);
   };
 
@@ -29,18 +32,22 @@ const HomePage = ({ getData, topics }) => {
 
 HomePage.propTypes = {
   getData: PropTypes.func.isRequired,
+  info: PropTypes.object.isRequired,
+  resetCards: PropTypes.func.isRequired,
   topics: PropTypes.array.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
   return {
+    info: state.info,
     topics: state.topics
   };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    getData: whichMockData => dispatch(dataActions.getData(whichMockData))
+    getData: whichMockData => dispatch(dataActions.getData(whichMockData)),
+    resetCards: () => dispatch(dataActions.resetData())
   };
 }
 

@@ -13,7 +13,7 @@ export default function infoReducer(state = initialState.info, action) {
       return Object.assign({}, newInfoObj);
     }
     case types.GET_DATA_SUCCESS:
-      return Object.assign({}, state, { length: action.data.length, loading: false });
+      return Object.assign({}, state, { activeList: action.whichMockData, length: action.data.length, loading: false });
     case types.REVEAL_ANSWER:
       return Object.assign({}, state, { answered: true });
     case types.RESET_DATA:

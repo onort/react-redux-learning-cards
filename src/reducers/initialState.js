@@ -1,13 +1,14 @@
 export default {
   cards:[],
   info: { 
-    correct: 0, 
-    wrong: 0, 
-    repeat: 0, 
+    activeList: '',
     answered: false,
+    correct: 0, 
     currentCard: 0,
     length: 0, 
-    loading: true 
+    loading: true,
+    repeat: 0, 
+    wrong: 0, 
   },
   topics: []
 };

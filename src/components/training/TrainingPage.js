@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { browserHistory, withRouter } from 'react-router';
-import { resetData } from '../../actions/dataActions';
+import { getData, resetData } from '../../actions/dataActions';
 import * as infoActions from '../../actions/infoActions';
 
 import AnswerCard from '../card/AnswerCard';
@@ -12,9 +12,10 @@ import TrainingStats from './TrainingStats';
 class TrainPage extends Component {
   constructor(props) {
     super(props);
-
+    
     this.handleMark = this.handleMark.bind(this);
     this.routerWillLeave = this.routerWillLeave.bind(this);
+    if (props.params.name !== props.info.activeList) props.getData(props.params.name)
   }
 
   componentDidMount() {
@@ -80,6 +81,7 @@ function mapStateToProps(state, ownProps) {
 
 function mapDispatchToProps(dispatch) {
   return {
+    getData: (listName) => dispatch(getData(listName)),
     handleMark: (card, mark) => dispatch(infoActions.markCard(card, mark)),
     handleReveal: () => dispatch(infoActions.revealAnswer()),
     resetCards: () =>dispatch(resetData())
