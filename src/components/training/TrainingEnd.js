@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { resetData } from '../../actions/dataActions';
+import CircularProgressbar from 'react-circular-progressbar';
 
 class TrainingEnd extends Component {
   constructor(props) {
@@ -19,16 +20,30 @@ class TrainingEnd extends Component {
   }
 
   render() {
-  const { correct, wrong, repeat } = this.props.info;
+  const { currentCard, correct, length, repeat, wrong } = this.props.info;
   const info = this.props.info;
     return (
       <div className="card-container">
-        <h3>Done!</h3>
+        <h3 className="end-header">Done!</h3>
+        <p className="end-text">You have trained {currentCard} of {length} words in this list.</p>
         <div className="end-stats">
-          <p>Correct: {correct} <span className="percentage">{this.getPercentage(correct)}%</span></p>
-          <p>Needs repeating: {repeat} <span className="percentage">{this.getPercentage(repeat)}%</span></p>
-          <p>Wrong: {wrong} <span className="percentage">{this.getPercentage(wrong)}%</span></p>
+          <div className="stat correct">
+            <CircularProgressbar percentage={this.getPercentage(correct)} />
+            <p className="end-amount">{correct}/<span className="end-length">{currentCard}</span></p>
+            <p className="end-type">Correct</p>
+          </div>
+          <div className="stat repeat">
+            <CircularProgressbar percentage={this.getPercentage(repeat)} />
+            <p className="end-amount">{repeat}/<span className="end-length">{currentCard}</span></p>
+            <p className="end-type">Needs Practice</p>
+          </div>
+          <div className="stat wrong">
+            <CircularProgressbar percentage={this.getPercentage(wrong)} />
+            <p className="end-amount">{wrong}/<span className="end-length">{currentCard}</span></p>
+            <p className="end-type">Wrong</p>
+          </div>
         </div>
+        <div className="clearfix" />
       </div>
     );
   }
