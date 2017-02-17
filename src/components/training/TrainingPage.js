@@ -15,7 +15,7 @@ class TrainPage extends Component {
     
     this.handleMark = this.handleMark.bind(this);
     this.routerWillLeave = this.routerWillLeave.bind(this);
-    if (props.params.name !== props.info.activeList) props.getData(props.params.name)
+    if (props.params.name !== props.info.activeList) props.getData(props.params.name);
   }
 
   componentDidMount() {
@@ -63,9 +63,11 @@ class TrainPage extends Component {
 
 TrainPage.propTypes = {
   cards: PropTypes.array,
+  getData: PropTypes.func.isRequired,
   info: PropTypes.object,
   handleMark: PropTypes.func.isRequired,
   handleReveal: PropTypes.func.isRequired,
+  params: PropTypes.object.isRequired,
   resetCards: PropTypes.func.isRequired,
   route: PropTypes.object.isRequired,
   router: PropTypes.object.isRequired,
