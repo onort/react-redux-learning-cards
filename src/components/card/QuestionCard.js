@@ -10,18 +10,21 @@ const QuestionCard = ({ card, handleReveal }) => {
     browserHistory.push('/finished');
   };
   return (
-    <div className="card-container">
-      <CardHeader title="Oxford 3000" />
+    <section className="card-container">
+      <CardHeader />
       <div className="card-body"> 
-        <h3 className="question"><small>What is the meaning of </small><br /> {card.word}?</h3>
+        <p className="question">What is the meaning of 
+          <span className="word"> {card.word}?</span>
+        </p>
       </div>
       <div className="card-actions">
-        <h4>Show Definition</h4>
-        <button className="button-inverted reveal" onClick={() => handleReveal()}>
-          <i className="material-icons">redo</i>
+        <button className="action" onClick={() => handleReveal()}>
+          <span className="icon">
+            <i className="material-icons">redo</i>
+          </span>
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

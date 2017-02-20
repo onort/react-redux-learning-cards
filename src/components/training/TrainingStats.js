@@ -14,20 +14,22 @@ const TrainingStats = (props) => {
   }
   
   return (
-    <div className="training-stats">
-    <div className="stat correct">
-      <CircularProgressbar percentage={percentages.correct} />
-    </div>
-    <div className="stat repeat">
-      <CircularProgressbar percentage={percentages.repeat} />
-    </div>
-    <div className="stat wrong">
-      <CircularProgressbar percentage={percentages.wrong} />
-    </div>
+    <section className="info">
+      <ul className="stats">
+        <li><div className="stat correct">
+          <CircularProgressbar percentage={percentages.correct} />
+        </div></li>
+        <li><div className="stat repeat">
+          <CircularProgressbar percentage={percentages.repeat} />
+        </div></li>
+        <li><div className="stat wrong">
+          <CircularProgressbar percentage={percentages.wrong} />
+        </div></li>
+      </ul>
       <div className="progress progress-bar">
         <div style={{width: `${progressWidth}%`}} />
       </div>
-    </div>
+    </section>
   );
 };
 

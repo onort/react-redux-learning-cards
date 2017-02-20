@@ -6,7 +6,7 @@ const App = (props) => {
   return (
     <div>
       <Header />
-      <div className="main-container">
+      <div className="wrapper">
         {props.children}
       </div>
     </div>

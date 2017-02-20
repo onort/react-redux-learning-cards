@@ -3,11 +3,11 @@ import { Link } from 'react-router';
 
 const Header = () => {
   return (
-    <div className="header">
+    <nav className="header">
       <Link to="/">
-        <h3 className="brand">React Redux Learning Cards</h3>
+        <span className="brand">React Redux Learning Cards</span>
       </Link>
-    </div>
+    </nav>
   );
 };
 

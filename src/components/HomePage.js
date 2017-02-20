@@ -14,18 +14,27 @@ const HomePage = ({ getData, info, resetCards, topics }) => {
 
   const listTopics = topic => {
     return (
-      <div key={topic.id} className="topic" onClick={() => handleClick(topic.name)}>
+      <li key={topic.id} className="topic" onClick={() => handleClick(topic.name)}>
         <span className="topic-name">{topic.name}</span>
-        <span className="topic-length">{topic.length} <span className="smaller">words</span></span>
-        <span className="topic-taken">{topic.takenOn ? topic.takenOn : null}</span>
-      </div>
+        <div className="topic-info">
+          <span className="word-count">{topic.length}</span>
+          <span className="word-text">words</span>
+        </div>
+        <div className="clearfix" />
+      </li>
     );
   };
 
   return (
-    <div className="topics-container">
-      <h3>Available Topics</h3>
-      { topics ? topics.map(listTopics): null}
+    <div>
+      <div className="topics-title">
+        <h3>Available Topics</h3>
+      </div>
+      <div className="topcis-container">
+        <ul className="topic-list">
+          { topics ? topics.map(listTopics): null}
+        </ul>
+      </div>
     </div>
   );
 };

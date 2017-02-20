@@ -25,23 +25,6 @@ a
 button
   outline: none
 
-.header
-  background: $headerBg
-  position: fixed
-  top: 0
-  left: 0
-  height: $headerHeight
-  width: 100%
-  padding: 0 60px
-
-  a
-    color: white
-
-  .brand
-    margin: 0
-    padding: 0
-    line-height: $headerHeight
-
 .main-container
   max-width: 750px
   margin: $headerHeight auto 0
@@ -50,8 +33,24 @@ button
 .clearfix
   clear: both
 
-// Loading 
+// Loading
+
 .loading-container
   display: flex
   height: 100%
+  margin-top: 10%
   justify-content: center
+
+.spinner
+    border: 8px solid #d6d6d6
+    border-top: 8px solid $blue
+    border-radius: 50%
+    width: 100px
+    height: 100px
+    animation: spin .5s linear infinite
+
+@keyframes spin
+    0% 
+      transform: rotate(0deg)
+    100%
+      transform: rotate(360deg)

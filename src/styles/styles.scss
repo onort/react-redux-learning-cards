@@ -1,0 +1,420 @@
+// Variables
+// Variables
+$sans: 'Roboto Condensed', sans-serif;
+
+  // Colors
+$grey-bg: #f4f4f4;
+$black: #333;
+$white: #fff;
+$light-grey: #d6d6d6;
+// $grey: #808080;
+$blue: #4078c0;
+$red: #AE2024;
+$green: #5FA145;
+$yellow: #FEDB09;
+
+// Mixins 
+
+@mixin depth-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+@mixin depth-2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+@mixin depth-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+@mixin smooth-transition {
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+
+// Base Classes 
+// ignore this one
+.main-container {
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $sans;
+  background: $grey-bg;
+  margin: 0;
+  padding: 0;
+  color: $black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.wrapper {
+  padding: 0 20% 0;
+}
+
+// Header
+
+.header {
+  background: $black;
+  height: 60px;
+  padding-left: 20%;
+  line-height: 60px;
+
+  a {
+    color: $white;
+  }
+
+  .brand {
+    font-size: 2em;
+  }
+}
+
+// Home Page
+
+.topic-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .topic {
+    @include depth-1();
+    @include smooth-transition();
+    margin: 1em auto;
+    height: 100%;
+    background: $white;
+    padding: 1em;
+    cursor: pointer;
+
+    &:hover {
+      @include depth-2();
+    }
+
+    .topic-name {
+      display: block;
+      width: 85%;
+      font-size: 1.4em;
+      float: left;
+      display: table-cell;
+      padding-top: .5em;
+      padding-left: .5em;
+    }
+
+    .topic-info {
+      text-align: center;
+      width: 10%;
+      float: right;
+
+      .word-count {
+        display: block;
+        font-size: 1.5em;
+      }
+
+      .word-text {
+        font-size: .8em;
+        color:lighten($black, 20);
+      }
+    }
+  }
+}
+
+.topics-title {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+// Info / Stats
+
+// Mobilde ustuste biniyorlar, ya ufalt yanyana dursunlar ya da block yap alt ust dursunlar
+// Heightini sabitleyip card container icin vh uzerinden height verebiliriz.
+
+// react-circular-progressbar styles
+.CircularProgressbar .CircularProgressbar-path {
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.3s ease 0s;
+}
+
+.CircularProgressbar .CircularProgressbar-trail  {
+  stroke: #d6d6d6;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+
+.info {
+  position: relative;
+
+  ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 2em;
+
+      .stat {
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        border-radius: 50%;
+        line-height: 60px;
+        
+        &.correct {
+          stroke: $green;
+          fill: $green;
+        }
+
+        &.repeat {
+          stroke: $yellow;
+          fill: $green;
+        }
+
+        &.wrong {
+          stroke: $red;
+          fill: $green;
+        }
+      }
+    }
+  }
+
+  .progress-bar {
+    display: inline-block;
+    position: absolute;
+    top: 2em;
+    right: 0;
+    width: 150px;
+    height: 6px;
+    background: $light-grey;
+
+    > div {
+      background: $blue;
+      height: 100%;
+      overflow: hidden;
+      transition: width .3s linear;
+    }
+  }
+}
+
+// Card 
+.card-container {
+  @include depth-2();
+  margin: 1em auto;
+  height: 100%;
+  background: $white;
+  padding: 1em;
+
+  .card-header {
+    height: 1.5em;
+
+     .end-train {
+      color: $red;
+      float: right;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+
+  }
+
+  .card-body {
+    padding: .5em;
+
+    .question {
+      font-size: 2em;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 1em;
+
+      .word {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 1.2em;
+      }
+    }
+
+    .definition-container {
+
+      .word {
+        text-align: right;
+        display: inline-block;
+        width: 40%;
+        vertical-align: top;
+        padding-top: 1em;
+
+        h3 {
+          font-weight: 700;
+          margin: 0;
+        }
+
+        .type {
+          display: block;
+          color: lighten($black, 20);
+          font-size: .7em;
+          letter-spacing: .8px;
+        }
+      }
+
+      ol.meanings {
+        width: 55%;
+        display: inline-block;
+        list-style: none;
+        // border-left: 1px solid $black;
+        counter-reset: li;
+        padding-left: 5%;
+        margin: 1em 0;
+
+        li {
+          color: $black;
+          counter-increment: li;
+
+          &::before {
+            content: counter(li);
+            color: darken($light-grey, 20);
+            margin-right: .5em;
+          }
+        }
+
+      }
+    }
+  }
+
+  .card-actions {
+    border-top: 1px solid $light-grey;
+    padding: 1em .5em .5em;
+    text-align: center;
+    margin: 0 auto;
+
+    .action {
+      @include depth-1();
+      display: inline-block;
+      height: 50px;
+      width: 50px;
+      padding: 10px;
+      border-radius: 50%;
+      border: 1px solid darken($light-grey, 20);
+      background: $white;
+      margin-right: 2em;
+      cursor: pointer;
+
+
+      // &:nth-child(2)::before,
+      // &:nth-child(2)::after {
+      //   content: ' ';
+      //   height: 1em;
+      //   width: 1em;
+      //   background: red;
+      // }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .icon {
+        font-size: 1.6em;
+        color: lighten($black, 20);
+
+        &.correct {
+          color: $green;
+        }
+        &.repeat {
+          color: $yellow;
+        }
+        &.wrong {
+          color: $red;
+        }
+      }
+    }
+
+    .action-text {
+      display: block;
+      margin: 0 auto .5em;
+      font-size: 1.2em;
+    }
+
+  }
+}
+
+// Training End
+
+.end-header {
+  text-align: center;
+  margin: 4em auto;
+
+  h3 {
+    font-size: 2em;
+  }
+
+  .end-info {
+    font-size: 1.5em;
+  }
+}
+
+
+.end-results {
+  position: relative;
+  text-align: center;
+
+  .result {
+    display: block;
+    width: 31%;
+    margin-right: .5em;
+    float: left;
+
+    .percentage {
+      display: block;
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      line-height: 80px;
+      color: $white;
+      margin: 1em auto;
+
+      &.correct {
+        background: $green;
+      }
+
+      &.repeat {
+        background: $yellow;
+      }
+
+      &.wrong {
+        background: $red;
+      }
+    }
+
+    .end-amount {
+      display: block;
+      font-size: 3em;
+      margin: .5em auto;
+
+      &.correct {
+        color: $green;
+      }
+
+      &.repeat {
+        color: $yellow;
+      }
+
+      &.wrong {
+        color: $red;
+      }
+
+    }
+
+    .end-text {
+      color: lighten($black, 40);
+    }
+
+  }
+}

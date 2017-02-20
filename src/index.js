@@ -7,7 +7,8 @@ import { getAvailableTopics } from './actions/topicActions';
 import configureStore from './store/configureStore';
 
 import routes from './routes';
-import './styles/main.sass';
+// import './styles/main.sass';
+import './styles/styles.scss';
 
 const store = configureStore();
 store.dispatch(getAvailableTopics());

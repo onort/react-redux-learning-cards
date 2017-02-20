@@ -23,27 +23,39 @@ class TrainingEnd extends Component {
   const { currentCard, correct, length, repeat, wrong } = this.props.info;
   const info = this.props.info;
     return (
-      <div className="card-container">
-        <h3 className="end-header">Done!</h3>
-        <p className="end-text">You have trained {currentCard} of {length} words in this list.</p>
-        <div className="end-stats">
-          <div className="stat correct">
-            <CircularProgressbar percentage={this.getPercentage(correct)} />
-            <p className="end-amount">{correct}/<span className="end-length">{currentCard}</span></p>
-            <p className="end-type">Correct</p>
+      <div>
+          <div className="end-header">
+            <h3>Well Done!</h3>
+            <span className="end-info">You have trained {currentCard} of {length} words in this list.</span>
           </div>
-          <div className="stat repeat">
-            <CircularProgressbar percentage={this.getPercentage(repeat)} />
-            <p className="end-amount">{repeat}/<span className="end-length">{currentCard}</span></p>
-            <p className="end-type">Needs Practice</p>
+        <section className="card-container">
+          <div className="card-body">
+            <div className="end-results">
+              <div className="result correct">
+                <div className="percentage correct">
+                  <CircularProgressbar percentage={this.getPercentage(correct)} />
+                </div>
+                <span className="end-amount correct">{correct}</span>
+                <span className="end-type">Correct</span>
+              </div>
+              <div className="result repeat">
+                <div className="percentage repeat">
+                  <CircularProgressbar percentage={this.getPercentage(repeat)} />
+                </div>
+                <span className="end-amount repeat">{repeat}</span>
+                <span className="end-type">Needs Practice</span>
+              </div>
+              <div className="result wrong">
+                <div className="percentage wrong">
+                  <CircularProgressbar percentage={this.getPercentage(wrong)} />
+                </div>
+                <span className="end-amount wrong">{wrong}</span>
+                <span className="end-type">Wrong</span>
+              </div>
+            </div>
           </div>
-          <div className="stat wrong">
-            <CircularProgressbar percentage={this.getPercentage(wrong)} />
-            <p className="end-amount">{wrong}/<span className="end-length">{currentCard}</span></p>
-            <p className="end-type">Wrong</p>
-          </div>
-        </div>
-        <div className="clearfix" />
+          <div className="clearfix" />
+        </section>
       </div>
     );
   }
