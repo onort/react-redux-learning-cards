@@ -13,8 +13,8 @@ const QuestionCard = ({ card, handleReveal }) => {
     <section className="card-container">
       <CardHeader />
       <div className="card-body question-card"> 
-        <p className="question">What is the meaning of 
-          <span className="word"> {card.word}?</span>
+        <p className="question">What is the meaning of the word
+          <span className="word"> &#8220;{card.word}&#8221;?</span>
         </p>
       </div>
       <div className="card-actions">

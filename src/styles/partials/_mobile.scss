@@ -1,7 +1,6 @@
 @media screen and (max-width: 450px ) {
   .header {
     padding-left: 4%;
-    background: red;
   }
 
   .info {
@@ -21,11 +20,20 @@
       padding: 1em .5em;
     }
 
+    .card-body {
+      padding: 0 .5em .5em;
+    }
+
     .card-actions {
       width: 100%;
+      padding: 1em .5em .5em;
 
-      .action .material-icons {
-        font-size: 1.2em;
+      .action {
+        padding: 0;
+
+        .material-icons {
+          font-size: 1.2em;
+        }
       }
     }
 
@@ -43,7 +51,6 @@
   }
 
   .end-header {
-    margin: 2.5em auto;
 
     h3 {
       font-size: 1.5em;

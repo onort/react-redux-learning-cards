@@ -3,24 +3,20 @@
 .card-container {
   @include depth-2();
   margin: 1em auto;
-  height: calc(100vh - 60px - (2em + 70px) - 4em);
+  height: calc(100vh - 60px - (2em + 70px) - 3em);
   background: $white;
   padding: 1em;
   position: relative;
 
-// instead of info div end-header (4em top-bottom margins, 2em h3, 1em h3 margin, 1.5em span = 12.5em)
+// instead of info div end-header (2em top-bottom margins each, 2em h3, 1em h3 margin, 1.5em span = 12.5em)
   &.end-card {
-    height: calc(100vh - 60px - (12.5em) - 4em);
+    height: calc(100vh - 60px - (12.5em) - 3em);
 
     .card-body {
       height: 100%;
       overflow: hidden;
     }
   }
-
-  // &.question-card {
-  //   height: 100%;
-  // }
 
   .card-header {
     height: 1.5em;
@@ -35,7 +31,7 @@
   }
 
   .card-body {
-    padding: .5em;
+    padding: 1em .5em;
     overflow-y: auto;
     height: 64%;
 
@@ -48,9 +44,9 @@
       text-transform: uppercase;
       text-align: center;
       margin: 1em;
+      line-height: 1.4em;
 
       .word {
-        display: inline-block;
         font-weight: 700;
         font-size: 1.2em;
       }
@@ -114,30 +110,16 @@
     width: 80%;
 
     .action {
-      // @include depth-1();
       display: inline-block;
-      // height: 50px;
-      // width: 50px;
       padding: 10px;
-      // border-radius: 50%;
-      // border: 1px solid darken($light-grey, 20);
       border: none;
       background: $white;
       margin-right: 2em;
       cursor: pointer;
 
       .material-icons {
-        font-size: 1.5em;
+        font-size: 1.3em;
       }
-
-
-      // &:nth-child(2)::before,
-      // &:nth-child(2)::after {
-      //   content: ' ';
-      //   height: 1em;
-      //   width: 1em;
-      //   background: red;
-      // }
 
       &:last-child {
         margin-right: 0;
@@ -187,7 +169,7 @@
 
 .end-header {
   text-align: center;
-  margin: 4em auto;
+  margin: 2em auto;
 
   h3 {
     font-size: 2em;
