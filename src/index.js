@@ -7,6 +7,7 @@ import { getAvailableTopics } from './actions/topicActions';
 import configureStore from './store/configureStore';
 
 import routes from './routes';
+require('file?name=[name].[ext]!./index.html');
 import './styles/main.scss';
 
 const store = configureStore();
