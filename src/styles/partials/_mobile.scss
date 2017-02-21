@@ -1,0 +1,57 @@
+@media screen and (max-width: 450px ) {
+  .header {
+    padding-left: 4%;
+    background: red;
+  }
+
+  .info {
+    text-align: center;
+
+    .progress-bar {
+      width: 90%;
+      right: 5%;
+      top: auto;
+      bottom: 0;
+    }
+  }
+
+  .card-container {
+
+    &.end-card {
+      padding: 1em .5em;
+    }
+
+    .card-actions {
+      width: 100%;
+
+      .action .material-icons {
+        font-size: 1.2em;
+      }
+    }
+
+    .end-results {
+
+      .result {
+        width: 30%;
+
+        .percentage {
+          height: 70px;
+          width: 70px;
+        }
+      }
+    }
+  }
+
+  .end-header {
+    margin: 2.5em auto;
+
+    h3 {
+      font-size: 1.5em;
+    }
+
+    .end-info {
+      padding: 0 .5em;
+      font-size: 1.2em;
+    }
+  }
+}
