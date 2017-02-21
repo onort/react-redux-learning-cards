@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <nav className="header">
       <Link to="/">
-        <span className="brand">React Redux Learning Cards</span>
+        <span className="brand">Learning Cards</span>
       </Link>
     </nav>
   );

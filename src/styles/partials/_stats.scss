@@ -1,0 +1,73 @@
+// Info / Stats
+
+// Mobilde ustuste biniyorlar, ya ufalt yanyana dursunlar ya da block yap alt ust dursunlar
+// Heightini sabitleyip card container icin vh uzerinden height verebiliriz.
+
+// react-circular-progressbar styles
+.CircularProgressbar .CircularProgressbar-path {
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.3s ease 0s;
+}
+
+.CircularProgressbar .CircularProgressbar-trail  {
+  stroke: #d6d6d6;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  dominant-baseline: middle;
+  text-anchor: middle;
+  font-size: 2em;
+}
+
+.info {
+  position: relative;
+
+  ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 1em 0;
+
+    li {
+      display: inline-block;
+      margin-right: 1em;
+
+      .stat {
+        height: $stat-size;
+        width: $stat-size;
+        
+        &.correct {
+          stroke: $green;
+          fill: $green;
+        }
+
+        &.repeat {
+          stroke: $yellow;
+          fill: $yellow;
+        }
+
+        &.wrong {
+          stroke: $red;
+          fill: $red;
+        }
+      }
+    }
+  }
+
+  .progress-bar {
+    display: inline-block;
+    position: absolute;
+    top: calc(35px + 1em);
+    right: 0;
+    width: 150px;
+    height: 6px;
+    background: $light-grey;
+
+    > div {
+      background: $blue;
+      height: 100%;
+      overflow: hidden;
+      transition: width .3s linear;
+    }
+  }
+}

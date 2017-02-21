@@ -1,0 +1,52 @@
+// Home Page
+
+.topic-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .topic {
+    @include depth-1();
+    @include smooth-transition();
+    margin: 1em auto;
+    height: 100%;
+    background: $white;
+    padding: 1em;
+    cursor: pointer;
+
+    &:hover {
+      @include depth-2();
+    }
+
+    .topic-name {
+      display: block;
+      width: 85%;
+      font-size: 1.4em;
+      float: left;
+      display: table-cell;
+      padding-top: .5em;
+      padding-left: .5em;
+    }
+
+    .topic-info {
+      text-align: center;
+      width: 10%;
+      float: right;
+
+      .word-count {
+        display: block;
+        font-size: 1.5em;
+      }
+
+      .word-text {
+        font-size: .8em;
+        color:$dark-grey;
+      }
+    }
+  }
+}
+
+.topics-title {
+  text-align: center;
+  font-size: 1.6em;
+}
