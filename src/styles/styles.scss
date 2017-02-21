@@ -13,6 +13,9 @@ $red: #AE2024;
 $green: #5FA145;
 $yellow: #FEDB09;
 
+  // Measurements
+$stat-size: 70px;
+
 // Mixins 
 
 @mixin depth-1 {
@@ -150,6 +153,7 @@ a {
 .CircularProgressbar .CircularProgressbar-text {
   dominant-baseline: middle;
   text-anchor: middle;
+  font-size: 2em;
 }
 
 .info {
@@ -159,17 +163,15 @@ a {
     list-style: none;
     display: inline-block;
     padding: 0;
+    margin: 1em 0;
 
     li {
       display: inline-block;
-      margin-right: 2em;
+      margin-right: 1em;
 
       .stat {
-        height: 60px;
-        width: 60px;
-        text-align: center;
-        border-radius: 50%;
-        line-height: 60px;
+        height: $stat-size;
+        width: $stat-size;
         
         &.correct {
           stroke: $green;
@@ -178,12 +180,12 @@ a {
 
         &.repeat {
           stroke: $yellow;
-          fill: $green;
+          fill: $yellow;
         }
 
         &.wrong {
           stroke: $red;
-          fill: $green;
+          fill: $red;
         }
       }
     }
@@ -192,7 +194,7 @@ a {
   .progress-bar {
     display: inline-block;
     position: absolute;
-    top: 2em;
+    top: calc(35px + 1em);
     right: 0;
     width: 150px;
     height: 6px;
@@ -208,12 +210,18 @@ a {
 }
 
 // Card 
+// 100 vh - header - (info + its margins) - card-container margins
 .card-container {
   @include depth-2();
   margin: 1em auto;
-  height: 100%;
+  height: calc(100vh - 60px - (2em + 70px) - 4em);
   background: $white;
   padding: 1em;
+  position: relative;
+
+  // &.question-card {
+  //   height: 100%;
+  // }
 
   .card-header {
     height: 1.5em;
@@ -229,6 +237,10 @@ a {
 
   .card-body {
     padding: .5em;
+
+    &.question-card {
+      padding-top: 12%;
+    }
 
     .question {
       font-size: 2em;
@@ -248,7 +260,7 @@ a {
       .word {
         text-align: right;
         display: inline-block;
-        width: 40%;
+        width: 35%;
         vertical-align: top;
         padding-top: 1em;
 
@@ -291,9 +303,14 @@ a {
 
   .card-actions {
     border-top: 1px solid $light-grey;
-    padding: 1em .5em .5em;
+    padding: 1em .5em;
     text-align: center;
     margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0); // needed for centering items in a abs positioned div
+    width: 80%;
 
     .action {
       @include depth-1();
@@ -321,7 +338,7 @@ a {
       }
 
       .icon {
-        font-size: 1.6em;
+        font-size: 2em;
         color: lighten($black, 20);
 
         &.correct {

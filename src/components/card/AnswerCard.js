@@ -17,6 +17,7 @@ const AnswerCard = ({ card, handleMark }) => {
 
   return (
     <div className="card-container">
+      <div className="card-header" />
       <div className="card-body">
         {card.definitions.map(renderDefinitions)}
       </div>

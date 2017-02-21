@@ -12,7 +12,7 @@ const QuestionCard = ({ card, handleReveal }) => {
   return (
     <section className="card-container">
       <CardHeader />
-      <div className="card-body"> 
+      <div className="card-body question-card"> 
         <p className="question">What is the meaning of 
           <span className="word"> {card.word}?</span>
         </p>
@@ -20,7 +20,7 @@ const QuestionCard = ({ card, handleReveal }) => {
       <div className="card-actions">
         <button className="action" onClick={() => handleReveal()}>
           <span className="icon">
-            <i className="material-icons">redo</i>
+            <i className="material-icons">navigate_next</i>
           </span>
         </button>
       </div>
