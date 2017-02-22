@@ -4,13 +4,15 @@
   @include depth-2();
   margin: 1em auto;
   height: calc(100vh - 60px - (2em + 70px) - 3em);
+  max-height: 600px;
   background: $white;
   padding: 1em;
   position: relative;
 
 // instead of info div end-header (2em top-bottom margins each, 2em h3, 1em h3 margin, 1.5em span = 12.5em)
   &.end-card {
-    height: calc(100vh - 60px - (12.5em) - 3em);
+    // height: calc(100vh - 60px - (12.5em) - 3em);
+    height: auto;
 
     .card-body {
       height: 100%;
@@ -114,7 +116,7 @@
       padding: 10px;
       border: none;
       background: $white;
-      margin-right: 2em;
+      margin-right: 3em;
       cursor: pointer;
 
       .material-icons {
