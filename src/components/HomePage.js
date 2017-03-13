@@ -28,7 +28,9 @@ const HomePage = ({ getData, info, resetCards, topics }) => {
   return (
     <div>
       <div className="topics-title">
-        <h3>Available Topics</h3>
+        <h3>Available Lists</h3>
+        <p>Pick a list and begin training.</p>
+        <p className="smaller">You can end your training at any time by clicking close button on word cards.</p>
       </div>
       <div className="topcis-container">
         <ul className="topic-list">

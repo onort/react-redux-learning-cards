@@ -7,7 +7,7 @@ import { getAvailableTopics } from './actions/topicActions';
 import configureStore from './store/configureStore';
 
 import routes from './routes';
-import 'file?name=[name].[ext]!./index.html';
+import 'file?name=[name].[ext]!./index.html'; // eslint-disable-line
 import './styles/main.scss';
 
 const store = configureStore();

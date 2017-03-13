@@ -35,21 +35,21 @@ class TrainingEnd extends Component {
                 <div className="percentage correct">
                   <CircularProgressbar percentage={this.getPercentage(correct)} />
                 </div>
-                <span className="end-amount correct">{correct}</span>
+                <span className="end-amount correct">{correct}<span>/{length}</span></span>
                 <span className="end-type">You have marked {correct} of {currentCard} words as correct.</span>
               </div>
               <div className="result repeat">
                 <div className="percentage repeat">
                   <CircularProgressbar percentage={this.getPercentage(repeat)} />
                 </div>
-                <span className="end-amount repeat">{repeat}</span>
+                <span className="end-amount repeat">{repeat}<span>/{length}</span></span>
                 <span className="end-type">You have marked {repeat} of {currentCard} words as needs repeating.</span>
               </div>
               <div className="result wrong">
                 <div className="percentage wrong">
                   <CircularProgressbar percentage={this.getPercentage(wrong)} />
                 </div>
-                <span className="end-amount wrong">{wrong}</span>
+                <span className="end-amount wrong">{wrong}<span>/{length}</span></span>
                 <span className="end-type">You have marked {wrong} of {currentCard} words as wrong.</span>
               </div>
             </div>

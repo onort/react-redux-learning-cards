@@ -49,4 +49,15 @@
 .topics-title {
   text-align: center;
   font-size: 1.6em;
+  p {
+    font-size: 0.8em;
+    margin: 0;
+  }
+
+  p.smaller {
+    font-size:  0.6em;
+    margin: .5em auto;
+    padding: 0 2em;
+    color: $dark-grey;
+  }
 }

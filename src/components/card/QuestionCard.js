@@ -18,7 +18,7 @@ const QuestionCard = ({ card, handleReveal }) => {
         </p>
       </div>
       <div className="card-actions">
-        <button className="action" onClick={() => handleReveal()}>
+        <button className="action question" onClick={() => handleReveal()}>
           <span className="icon">
             <i className="material-icons">navigate_next</i>
           </span>

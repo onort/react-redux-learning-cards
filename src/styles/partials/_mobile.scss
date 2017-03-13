@@ -11,10 +11,12 @@
       right: 5%;
       top: auto;
       bottom: 0;
+      height: 4px;
     }
   }
 
   .card-container {
+    margin: .5em auto;
 
     &.end-card {
       padding: 1em .5em;
@@ -22,6 +24,7 @@
 
     .card-body {
       padding: 0 .5em .5em;
+      height: 70%;
     }
 
     .card-actions {

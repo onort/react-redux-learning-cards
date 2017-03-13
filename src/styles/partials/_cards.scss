@@ -2,7 +2,7 @@
 // 100 vh - header - (info + its margins) - card-container margins
 .card-container {
   @include depth-2();
-  margin: 1em auto;
+  margin: 0 auto;
   height: calc(100vh - 60px - (2em + 70px) - 3em);
   max-height: 600px;
   background: $white;
@@ -24,10 +24,19 @@
     height: 1.5em;
 
      .end-train {
-      color: $red;
+      color: desaturate($red, 30);
       float: right;
       font-size: 1.5em;
       cursor: pointer;
+      transition: all .3s ease;
+
+        &:hover {
+          color: $red
+        }
+
+        .material-icons {
+          font-size: 1.5em;
+        }
     }
 
   }
@@ -102,7 +111,7 @@
 
   .card-actions {
     border-top: 1px solid $light-grey;
-    padding: 1em .5em;
+    padding: .5em;
     text-align: center;
     margin: 0 auto;
     position: absolute;
@@ -113,11 +122,17 @@
 
     .action {
       display: inline-block;
-      padding: 10px;
+      padding: .5em;
       border: none;
       background: $white;
       margin-right: 3em;
       cursor: pointer;
+
+      &.question {
+        .material-icons {
+          font-size: 2em;
+        }
+      }
 
       .material-icons {
         font-size: 1.3em;
@@ -222,6 +237,7 @@
       display: block;
       font-size: 3em;
       margin: .5em auto;
+      padding-left: .5em;
 
       &.correct {
         color: $green;
@@ -233,6 +249,12 @@
 
       &.wrong {
         color: $red;
+      }
+
+      span {
+        color: lighten($dark-grey, 20);
+        font-size: .5em;
+        letter-spacing: -0.5px;
       }
 
     }
